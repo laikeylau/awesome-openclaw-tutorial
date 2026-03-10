@@ -517,6 +517,15 @@ openclaw diagnose
 # 备份配置
 openclaw backup create
 
+# 校验备份（2026.3.8+）
+openclaw backup verify <backup-id或文件路径>
+
+# 仅备份配置（2026.3.8+）
+openclaw backup create --only-config
+
+# 备份但不包含workspace（2026.3.8+）
+openclaw backup create --no-include-workspace
+
 # 列出备份
 openclaw backup list
 
@@ -722,3 +731,17 @@ openclaw models list | xargs -I {} openclaw models test {}
 ---
 
 **提示**：本速查表会随OpenClaw版本更新而更新，建议收藏本页面以便随时查阅。
+
+
+### A.X ACP 溯源与回执（2026.3.8+）
+
+```bash
+# 为 ACP 会话注入溯源元数据（可选）
+openclaw acp --provenance meta
+
+# 注入溯源元数据 + 可见回执（用于审计/追踪）
+openclaw acp --provenance meta+receipt
+
+#关闭溯源（默认行为可能随版本变化，以官方为准）
+openclaw acp --provenance off
+```

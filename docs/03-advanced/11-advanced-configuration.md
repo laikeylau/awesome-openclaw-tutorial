@@ -2555,3 +2555,45 @@ export MOONSHOT_API_KEY=sk-xxx
 ---
 
 **下一章预告**：第12章将进入实战案例部分，学习个人效率提升的完整工作流。
+
+
+---
+
+## 11.9 Talk 模式配置（2026.3.8+）
+
+Talk 模式允许语音输入和输出。新增 `talk.silenceTimeoutMs` 配置项，用于设置自动发送前的静默等待时间（毫秒）。
+
+```json
+{
+  "talk": {
+    "silenceTimeoutMs": 2000  // 默认2秒无声后自动发送
+  }
+}
+```
+
+**使用场景**：
+- 语音对话时，避免频繁中断
+- 调整响应灵敏度（值越小越灵敏）
+- 适配不同网络延迟环境
+
+**推荐值**：
+- 快速响应：1000-1500ms
+- 平衡模式：2000-2500ms（默认）
+- 宽松模式：3000-4000ms
+
+
+---
+
+##11.10 Brave Web Search：LLM Context 模式（2026.3.8+，可选）
+
+2026.3.8 新增可选配置 `tools.web.search.brave.mode: "llm-context"`，用于让 `web_search` 调用 Brave 的 *LLM Context*端点返回更适合大模型使用的 grounding snippets（带来源元数据）。
+
+```yaml
+tools:
+ web:
+ search:
+ brave:
+ mode: "llm-context"
+```
+
+>说明：该模式为 **opt-in**，不配置则保持原行为。
