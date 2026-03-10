@@ -408,7 +408,6 @@ mark {
           let content = doc.content || '';
 
           // 尝试在内容中找到包含关键词的片段
-          const queryWords = query.split(/\s+/).filter(w => w.length > 0);
           if (content && queryWords.length > 0) {
             for (const word of queryWords) {
               const index = content.indexOf(word);
