@@ -1,0 +1,501 @@
+# OpenClaw 国产Claw产品选购指南（附对比表）
+
+> 📚 **OpenClaw 2026.3.12 完整教程** - 附录O速查手册
+> 🌐 **在线阅读**：[https://awesome.tryopenclaw.asia](https://awesome.tryopenclaw.asia)
+> 💻 **GitHub仓库**：[https://github.com/xianyu110/awesome-openclaw-tutorial](https://github.com/xianyu110/awesome-openclaw-tutorial)
+
+---
+
+# 国产 Claw 产品选购指南
+
+> 💡 **本章目标**：了解国产 AI Agent 产品（俗称"龙虾"）的特点和差异，选择最适合你的工具
+
+---
+
+## 📋 目录
+
+- [市场背景](#市场背景)
+- [产品对比](#产品对比)
+- [按场景推荐](#按场景推荐)
+- [选购建议](#选购建议)
+
+---
+
+## 市场背景
+
+### "百虾大战"（2026）
+
+2026年初，OpenClaw（开源 AI Agent 工具）爆火后，国内科技公司纷纷推出自家的 AI Agent 产品，这波浪潮被戏称为"百虾大战"或"龙虾大战"。
+
+### 为什么叫"虾"？
+
+OpenClaw 的吉祥物是龙虾（🦞），因此国内的 AI Agent 产品也被称为各种"虾"：
+- OpenClaw → 电子龙虾
+- MaxClaw → 最大虾
+- AutoClaw → 自动虾
+- QClaw → QQ虾
+- ArkClaw → 方舟虾
+- KimiClaw → 月之暗面虾
+- LobsterAI → 有道龙虾
+
+---
+
+## 产品对比
+
+### 核心产品概览
+
+| 产品 | 厂商 | 类型 | 开源 | 价格 | 特点 |
+|------|------|------|------|------|------|
+| **OpenClaw** | 社区 | 开源 | ✅ | 免费 | 功能最全，社区活跃 |
+| **MaxClaw** | MiniMax | SaaS | ❌ | 按量付费 | 即开即用，中文优化 |
+| **AutoClaw** | 智谱/GLM | SaaS | ❌ | 订阅制 | 企业级，集成深度 |
+| **QClaw** | 腾讯 | SaaS | ❌ | 免费+付费 | QQ生态集成 |
+| **ArkClaw** | 字节跳动 | SaaS | ❌ | 免费 | 抖音/字节生态 |
+| **KimiClaw** | 月之暗面 | SaaS | ❌ | 按量付费 | 长文本处理强 |
+| **LobsterAI** | 网易有道 | SaaS | ❌ | 订阅制 | 教育场景优化 |
+
+---
+
+### 详细对比
+
+#### 1. OpenClaw（开源版）
+
+**优势**：
+- ✅ 完全开源，可自托管
+- ✅ 功能最全面（49个内置技能）
+- ✅ 社区活跃，1700+社区技能
+- ✅ 支持多种模型（Claude、GPT、Gemini、DeepSeek等）
+- ✅ 无供应商锁定
+- ✅ 数据隐私可控
+
+**劣势**：
+- ❌ 需要技术能力部署
+- ❌ 需要自己购买 API Key
+- ❌ 维护成本高
+- ❌ 遇到问题需自己解决
+
+**适用人群**：
+- 有技术背景的开发者
+- 对数据隐私要求高的用户
+- 希望深度定制的用户
+- 企业内部部署
+
+**官网**: https://openclaw.ai
+
+---
+
+#### 2. MaxClaw（MiniMax）
+
+**特点**：
+- 🚀 即开即用，无需部署
+- 🇨🇳 中文优化，适合国内用户
+- 🤖 内置 MiniMax 模型
+- 📱 移动端友好
+
+**价格**：
+- 按使用量计费
+- 新用户有免费额度
+
+**优势**：
+- ✅ 零门槛使用
+- ✅ 中文理解能力强
+- ✅ 响应速度快
+- ✅ 客服支持完善
+
+**劣势**：
+- ❌ 供应商锁定
+- ❌ 定制能力有限
+- ❌ 长期成本可能较高
+
+**适用人群**：
+- 个人用户尝鲜
+- 快速验证 AI Agent 场景
+- 中文为主的使用场景
+
+**官网**: https://maxclaw.minimaxi.com
+
+---
+
+#### 3. AutoClaw（智谱/GLM）
+
+**特点**：
+- 🏢 企业级定位
+- 🔗 深度集成智谱 AI 生态
+- 📊 企业级数据安全
+
+**价格**：
+- 订阅制（按月/年）
+- 企业版需询价
+
+**优势**：
+- ✅ 企业级支持和 SLA
+- ✅ 与智谱 AI 深度集成
+- ✅ 符合国内合规要求
+- ✅ 适合金融、政务等场景
+
+**劣势**：
+- ❌ 价格较高
+- ❌ 生态相对封闭
+- ❌ 灵活性较低
+
+**适用人群**：
+- 企业用户
+- 需要合规保障的行业
+- 预算充足的团队
+
+**官网**: https://autoclaw智谱.cn
+
+---
+
+#### 4. QClaw（腾讯）
+
+**特点**：
+- 💬 深度集成 QQ 生态
+- 🎮 游戏场景优化
+- 👥 社交功能强
+
+**价格**：
+- 基础功能免费
+- 高级功能付费
+
+**优势**：
+- ✅ 与 QQ 无缝集成
+- ✅ 年轻用户友好
+- ✅ 游戏相关功能强
+- ✅ 免费基础版
+
+**劣势**：
+- ❌ 依赖 QQ 生态
+- ❌ 功能相对局限
+- ❌ 专业场景支持不足
+
+**适用人群**：
+- QQ 重度用户
+- 游戏玩家
+- 年轻个人用户
+
+**官网**: https://qclaw.qq.com
+
+---
+
+#### 5. ArkClaw（字节跳动）
+
+**特点**：
+- 📱 抖音/今日头条集成
+- 🎬 内容创作优化
+- 💡 推荐算法加持
+
+**价格**：
+- 目前免费
+- 未来可能收费
+
+**优势**：
+- ✅ 字节生态集成
+- ✅ 内容创作能力强
+- ✅ 推荐算法优势
+- ✅ 目前免费
+
+**劣势**：
+- ❌ 依赖字节生态
+- ❌ 功能在迭代中
+- ❌ 商业模式不明确
+
+**适用人群**：
+- 抖音/头条创作者
+- 内容运营人员
+- 字节生态用户
+
+**官网**: https://arkclaw字节.cn
+
+---
+
+#### 6. KimiClaw（月之暗面）
+
+**特点**：
+- 📚 长文本处理能力突出
+- 🔍 搜索增强
+- 📖 文档理解强
+
+**价格**：
+- 按使用量计费
+- 有免费额度
+
+**优势**：
+- ✅ 长文本处理无敌
+- ✅ 搜索能力强
+- ✅ 文档解析优秀
+- ✅ 适合学术/研究场景
+
+**劣势**：
+- ❌ 功能相对单一
+- ❌ 生态不如 OpenClaw
+- ❌ 依赖 Kimi API
+
+**适用人群**：
+- 学术研究者
+- 需要处理长文档的用户
+- 知识管理需求强的人
+
+**官网**: https://kimi.moonshot.cn/agent
+
+---
+
+#### 7. LobsterAI（网易有道）
+
+**特点**：
+- 📚 教育场景优化
+- 🎓 学习辅助功能
+- 👨‍👩‍👧‍👦 家长控制
+
+**价格**：
+- 订阅制
+- 家庭套餐
+
+**优势**：
+- ✅ 教育内容优质
+- ✅ 适合学生和家长
+- ✅ 学习路径规划
+- ✅ 家长监控功能
+
+**劣势**：
+- ❌ 场景局限（仅教育）
+- ❌ 不适合专业场景
+- ❌ 价格偏高
+
+**适用人群**：
+- 学生群体
+- 家长
+- 教育工作者
+
+**官网**: https://lobster.youdao.com
+
+---
+
+## 按场景推荐
+
+### 🏢 企业办公场景
+
+**首选**：AutoClaw（智谱）
+
+**理由**：
+- 企业级支持
+- 合规保障
+- 数据安全
+
+**备选**：OpenClaw（自托管）
+
+---
+
+### 💻 技术开发场景
+
+**首选**：OpenClaw
+
+**理由**：
+- 功能最全
+- 可定制
+- 社区活跃
+- 支持多种工具
+
+---
+
+### 📱 个人轻度使用
+
+**首选**：MaxClaw（MiniMax）
+
+**理由**：
+- 零门槛
+- 中文优化
+- 即开即用
+
+**备选**：QClaw（免费版）
+
+---
+
+### 🎬 内容创作场景
+
+**首选**：ArkClaw（字节）
+
+**理由**：
+- 抖音集成
+- 推荐算法
+- 创作工具
+
+**备选**：KimiClaw（长内容）
+
+---
+
+### 📚 学习研究场景
+
+**首选**：KimiClaw
+
+**理由**：
+- 长文本处理
+- 文档理解
+- 搜索增强
+
+**备选**：LobsterAI（教育）
+
+---
+
+### 🎮 游戏娱乐场景
+
+**首选**：QClaw
+
+**理由**：
+- QQ 集成
+- 游戏优化
+- 社交功能
+
+---
+
+### 🔒 数据敏感场景
+
+**首选**：OpenClaw（自托管）
+
+**理由**：
+- 数据完全可控
+- 可私有化部署
+- 无供应商锁定
+
+---
+
+## 选购建议
+
+### 决策流程图
+
+```
+是否有技术能力？
+├─ 是 → 是否需要深度定制？
+│       ├─ 是 → OpenClaw（开源版）
+│       └─ 否 → MaxClaw / AutoClaw
+└─ 否 → 主要使用场景是什么？
+        ├─ 企业办公 → AutoClaw
+        ├─ 内容创作 → ArkClaw
+        ├─ 学习研究 → KimiClaw
+        ├─ 游戏娱乐 → QClaw
+        ├─ 教育辅导 → LobsterAI
+        └─ 日常轻度 → MaxClaw
+```
+
+### 核心决策因素
+
+#### 1. 技术能力
+
+| 技术能力 | 推荐产品 |
+|----------|----------|
+| 有开发能力 | OpenClaw |
+| 一般技术能力 | MaxClaw、AutoClaw |
+| 无技术背景 | MaxClaw、QClaw、ArkClaw |
+
+#### 2. 数据隐私要求
+
+| 隐私要求 | 推荐产品 |
+|----------|----------|
+| 极高（金融、政务） | OpenClaw（自托管）、AutoClaw |
+| 高（企业数据） | AutoClaw、OpenClaw |
+| 一般 | MaxClaw、KimiClaw |
+| 低（个人使用） | 任何产品 |
+
+#### 3. 预算考虑
+
+| 预算 | 推荐产品 |
+|------|----------|
+| 免费 | OpenClaw（自付API）、QClaw基础版、ArkClaw |
+| 低预算（<50元/月） | MaxClaw、KimiClaw |
+| 中预算（50-200元/月） | AutoClaw、LobsterAI |
+| 高预算（>200元/月） | AutoClaw企业版 |
+
+#### 4. 生态依赖
+
+| 主要平台 | 推荐产品 |
+|----------|----------|
+| QQ/微信 | QClaw |
+| 抖音/头条 | ArkClaw |
+| 飞书/企业微信 | AutoClaw |
+| 独立使用 | OpenClaw、MaxClaw |
+
+---
+
+## 迁移指南
+
+### 从 SaaS 产品迁移到 OpenClaw
+
+如果你从 MaxClaw、AutoClaw 等 SaaS 产品迁移到 OpenClaw：
+
+1. **导出数据**：
+   - 聊天记录
+   - 配置文件
+   - 自定义指令
+
+2. **选择部署方式**：
+   - 本地部署（Mac）
+   - 云端部署（火山引擎、腾讯云）
+   - Docker 部署
+
+3. **配置模型**：
+   - 购买 API Key
+   - 配置模型参数
+
+4. **迁移技能**：
+   - 查找替代的社区技能
+   - 或自行开发
+
+详见 [第2章：环境搭建](../../docs/01-basics/02-installation.md)
+
+---
+
+## 相关资源
+
+- [第1章：认识 OpenClaw](../../docs/01-basics/01-introduction.md) - OpenClaw 详细介绍
+- [第2章：环境搭建](../../docs/01-basics/02-installation.md) - OpenClaw 部署指南
+- [附录N：Skills生态说明](../N-skills-ecosystem.md) - Skills 生态系统
+- [安全指南](../../docs/03-advanced/99-security-guide.md) - 安全最佳实践
+
+---
+
+**最后更新**：2026年3月13日
+**市场现状**：百虾大战持续中，产品快速迭代
+**建议**：根据自身需求选择，避免盲目跟风
+
+
+---
+
+## 🌐 在线阅读
+
+📖 **想在线阅读此附录？**
+
+[🔗 在线阅读此附录](https://awesome.tryopenclaw.asia/appendix/O-domestic-claw-products/)
+
+访问网站获取更好的阅读体验：
+- 📱 响应式设计，支持手机、平板、电脑
+- 🌙 支持黑暗模式，保护眼睛
+- 🔍 内置搜索功能，快速定位内容
+- 📋 目录导航，轻松跳转章节
+
+[🏠 访问完整教程网站](https://awesome.tryopenclaw.asia)
+
+
+---
+
+## 📚 更多章节
+
+- [附录A：命令速查表](https://awesome.tryopenclaw.asia/appendix/A-command-reference/)
+- [附录B：必装Skills清单](https://awesome.tryopenclaw.asia/appendix/B-skills-catalog/)
+- [附录C：API服务商对比](https://awesome.tryopenclaw.asia/appendix/C-api-comparison/)
+- [附录D：社区资源导航](https://awesome.tryopenclaw.asia/appendix/D-community-resources/)
+- [附录E：常见问题速查](https://awesome.tryopenclaw.asia/appendix/E-common-problems/)
+
+## 🎯 相关资源
+
+- **OpenClaw 官网**：[https://openclaw.ai](https://openclaw.ai)
+- **OpenClaw 官方文档**：[https://docs.openclaw.ai](https://docs.openclaw.ai)
+- **ClawHub 技能市场**：[https://clawhub.ai](https://clawhub.ai)
+- **GitHub 教程仓库**：[https://github.com/xianyu110/awesome-openclaw-tutorial](https://github.com/xianyu110/awesome-openclaw-tutorial)
+
+---
+
+**版权声明**：本文采用 [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html) 许可证
+**作者**：[MaynorAI](https://github.com/xianyu110)
+**发布时间**：2026年03月14日
+
+> 💡 **温馨提示**：如果这篇教程对你有帮助，欢迎点赞、收藏、评论三连支持！
