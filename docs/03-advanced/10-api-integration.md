@@ -1,10 +1,10 @@
-# 第10章 API服务集成（绘图/Notion/视频/语音）
+# 第10章节 API服务集成（绘图/Notion/视频/语音）
 
 > 接入第三方服务，让AI能力更强大
 
-本章将介绍如何将OpenClaw与各种第三方API服务集成，扩展AI的能力边界。重点介绍4个实用场景的配置方法：AI绘图、Notion数据同步、视频生成和语音合成。
+本章节将介绍如何将OpenClaw与各种第三方API服务集成，扩展AI的能力边界。重点介绍4个实用场景的配置方法：AI绘图、Notion数据同步、视频生成和语音合成。
 
-💡 **本章重点**：API集成的配置方法和基础使用。详细的实战案例请参考第14章《创意应用探索》。
+💡 **本章节重点**：API集成的配置方法和基础使用。详细的实战案例请参考第14章节《创意应用探索》。
 
 ---
 
@@ -35,7 +35,7 @@ OpenClaw支持多种AI绘图服务：
 # 克隆技能仓库
 git clone https://github.com/xianyu110/awesome-openclaw-tutorial.git
 
-# 复制到OpenClaw的skills目录
+# 复制到OpenClaw的skills目附录
 cp -r expert-skills-hub/skills/bananapro-image-gen ~/.openclaw/skills/
 
 # 安装依赖
@@ -112,7 +112,7 @@ OpenClaw会自动调用绘图Skill，生成Logo并保存到本地。
 **示例2：生成白板图**
 
 ```
-你：生成一张白板图片，手写字体风格，内容是：
+你：生成一张白板图片，手写字体风格，内内容是：
 
 标题：OpenClaw核心优势
 
@@ -242,7 +242,7 @@ chmod +x batch_generate.sh
 - 用途：[社交媒体/网站/名片]"
 
 # 白板图模板
-"生成一张白板图片，手写字体风格，内容是：
+"生成一张白板图片，手写字体风格，内内容是：
 标题：[标题文字]
 核心要点：
 1. [要点1]
@@ -270,9 +270,9 @@ chmod +x batch_generate.sh
 ```text
 ### 10.1.7 实战案例
 
-**案例1：为教程生成章节总结图**
+**案例1：为教程生成章节节总结图**
 
-场景：你在写一本OpenClaw教程，需要为每章生成一张总结白板图。
+场景：你在写一本OpenClaw教程，需要为每章节生成一张总结白板图。
 
 ```bash
 # 使用提供的测试脚本
@@ -280,7 +280,7 @@ cd ~/.openclaw/skills/bananapro-image-gen
 bash test_chapters.sh
 ```text
 这个脚本会自动生成4张图片：
-- `chapter1_summary.png` - 第1章总结
+- `chapter1_summary.png` - 第1章节总结
 - `architecture.png` - 核心架构图
 - `chapter2_deployment.png` - 部署方式对比
 - `chapter3_persona.png` - 人设配置
@@ -292,14 +292,14 @@ bash test_chapters.sh
 
 **案例2：批量生成社交媒体配图**
 
-场景：你是内容创作者，需要为10篇文章生成配图。
+场景：你是内内容创作者，需要为10篇文章节生成配图。
 
 ```python
 # create_social_images.py
 import subprocess
 import json
 
-# 文章标题列表
+# 文章节标题列表
 articles = [
     "AI时代的超级个体",
     "效率提升10倍的秘密",
@@ -367,9 +367,9 @@ EOF
 chmod +x generate_logos.sh
 ./generate_logos.sh
 ```text
-### 10.1.8 常见问题
+### 10.1.8 常见访问题
 
-**Q1：生成的图片不符合预期怎么办？**
+**Q1：生成的图片不符合预期怎么怎么办？**
 
 A：优化提示词，增加更多细节描述。可以尝试：
 - 添加参考风格
@@ -396,7 +396,7 @@ convert output.png output.jpg
 # 转换为WebP（更小的文件）
 convert output.png output.webp
 ```text
-**Q4：生成速度慢怎么办？**
+**Q4：生成速度慢怎么怎么办？**
 
 A：
 - 检查网络连接
@@ -428,7 +428,7 @@ print(f"图片已生成：{image_path}")
 Skill支持两种API格式，可以根据需求切换：
 
 ```bash
-# OpenAI格式（兼容性好）
+# OpenAI格式（兼内容性好）
 python3 scripts/generate_image.py \
     --api-format openai \
     --prompt "你的提示词"
@@ -471,7 +471,7 @@ TEMPLATES = {
     - 风格：{style}
     - 用途：{usage}""",
     
-    "whiteboard": """生成一张白板图片，手写字体风格，内容是：
+    "whiteboard": """生成一张白板图片，手写字体风格，内内容是：
     标题：{title}
     {content}
     用手写字体，添加箭头、框图等手绘元素""",
@@ -502,14 +502,14 @@ generate_from_template(
 
 ## 10.2 Notion数据同步封装
 
-Notion是流行的知识管理工具，通过OpenClaw集成Notion API，可以实现自动化的数据同步和内容管理。
+Notion是流行的知识管理工具，通过OpenClaw集成Notion API，可以实现自动化的数据同步和内内容管理。
 
 ![Notion工作空间 - 知识管理和协作平台](https://upload.maynor1024.live/file/1770869312061_image-20260212120817415.png)
 
 ### 10.2.1 为什么要集成Notion？
 
 **应用场景：**
-- 📝 自动创建笔记：OpenClaw处理的内容自动保存到Notion
+- 📝 自动创建笔记：OpenClaw处理的内内容自动保存到Notion
 - 📊 数据库同步：自动更新Notion数据库
 - 📅 任务管理：自动创建和更新任务
 - 🔄 双向同步：Notion和OpenClaw数据互通
@@ -539,7 +539,7 @@ pip install notion-client
 创建自己的 Notion Skill：
 
 ```bash
-# 创建 Skill 目录
+# 创建 Skill 目附录
 mkdir -p ~/.openclaw/skills/my-notion-skill
 cd ~/.openclaw/skills/my-notion-skill
 
@@ -598,8 +598,8 @@ npm install @notionhq/client
    
 3. **配置权限**
    - 在 "Capabilities" 部分，勾选以下权限：
-     - ✅ **Read content**：读取页面和数据库内容
-     - ✅ **Update content**：更新现有内容
+     - ✅ **Read content**：读取页面和数据库内内容
+     - ✅ **Update content**：更新现有内内容
      - ✅ **Insert content**：创建新页面和数据库条目
      - ✅ **Read comments**：读取评论（可选）
      - ✅ **Insert comments**：添加评论（可选）
@@ -661,11 +661,11 @@ npm install @notionhq/client
    chmod 600 ~/.openclaw/config/notion.json
    ```
 
-#### 步骤3：分享页面/数据库给 Integration
+#### 步骤3：分分享页面/数据库给 Integration
 
-这是最关键的一步！即使有了 API Key，Integration 也只能访问明确分享给它的页面和数据库。
+这是最关键的一步！即使有了 API Key，Integration 也只能访问明确分分享给它的页面和数据库。
 
-**分享单个页面：**
+**分分享单个页面：**
 
 1. 打开你想要 OpenClaw 访问的 Notion 页面
 2. 点击页面右上角的 "Share" 按钮
@@ -674,7 +674,7 @@ npm install @notionhq/client
 5. 点击集成名称，然后点击 "Invite"
 6. 现在这个页面及其所有子页面都可以被 Integration 访问了
 
-**分享数据库：**
+**分分享数据库：**
 
 1. 打开你的 Notion 数据库页面
 2. 点击右上角的 "..." 菜单
@@ -682,12 +682,12 @@ npm install @notionhq/client
 4. 搜索并选择你的集成（OpenClaw Integration）
 5. 点击 "Confirm"
 
-**批量分享（推荐）：**
+**批量分分享（推荐）：**
 
 如果你想让 OpenClaw 访问整个工作区：
 1. 在工作区的根页面（通常是 "Workspace" 页面）
 2. 点击 "Share" → 连接你的 Integration
-3. 这样所有子页面和数据库都会被自动分享
+3. 这样所有子页面和数据库都会被自动分分享
 
 #### 步骤4：获取 Database ID（如需操作数据库）
 
@@ -833,9 +833,9 @@ OpenClaw：正在测试 Notion API 连接...
 
 ✅ Notion 集成配置完成！
 ```text
-#### 常见问题排查
+#### 常见访问题排查
 
-**问题1：API 调用返回 401 Unauthorized**
+**访问题1：API 调用返回 401 Unauthorized**
 
 原因：API Key 错误或未正确配置
 
@@ -849,16 +849,16 @@ echo $NOTION_API_KEY
 # 访问 https://www.notion.so/my-integrations
 # 重新复制密钥并更新配置
 ```text
-**问题2：API 调用返回 404 Not Found**
+**访问题2：API 调用返回 404 Not Found**
 
-原因：页面或数据库未分享给 Integration
+原因：页面或数据库未分分享给 Integration
 
 解决方案：
-1. 确认页面/数据库已分享给 Integration
+1. 确认页面/数据库已分分享给 Integration
 2. 检查 Database ID 是否正确
 3. 确认 Integration 有访问权限
 
-**问题3：无法创建页面**
+**访问题3：无法创建页面**
 
 原因：Integration 缺少 "Insert content" 权限
 
@@ -868,7 +868,7 @@ echo $NOTION_API_KEY
 3. 在 "Capabilities" 中勾选 "Insert content"
 4. 保存更改
 
-**问题4：Database ID 找不到**
+**访问题4：Database ID 找不到**
 
 解决方案：
 ```bash
@@ -912,7 +912,7 @@ NOTION_API_KEY="${NOTION_API_KEY}"
 ```text
 **4. 最小权限原则**
 - 只授予必要的权限
-- 只分享需要访问的页面/数据库
+- 只分分享需要访问的页面/数据库
 - 定期审查 Integration 的访问权限
 
 #### 完整配置示例
@@ -946,7 +946,7 @@ NOTION_API_KEY="${NOTION_API_KEY}"
       },
       "task": {
         "properties": {
-          "Status": "待办",
+          "Status": "待怎么办",
           "Priority": "中"
         }
       }
@@ -954,7 +954,7 @@ NOTION_API_KEY="${NOTION_API_KEY}"
   }
 }
 ```text
-完成这些设置后，你就可以通过 OpenClaw 调用 Notion API 来创建、读取和更新 Notion 中的内容了！
+完成这些设置后，你就可以通过 OpenClaw 调用 Notion API 来创建、读取和更新 Notion 中的内内容了！
 
 ### 10.2.4 配置Notion集成
 
@@ -994,10 +994,10 @@ nano ~/.openclaw/openclaw.json
 **示例1：自动创建笔记**
 
 ```
-你：把这篇文章保存到Notion
+你：把这篇文章节保存到Notion
 
 标题：OpenClaw使用心得
-内容：
+内内容：
 今天学习了OpenClaw的API集成功能，
 主要收获有：
 1. 学会了配置Gemini API
@@ -1016,7 +1016,7 @@ OpenClaw：好的，正在保存到Notion...
 • 页面ID：abc123...
 • 链接：https://notion.so/abc123
 
-📊 内容统计：
+📊 内内容统计：
 • 字数：120字
 • 段落：4段
 • 列表项：3项
@@ -1064,7 +1064,7 @@ OpenClaw：好的，正在扫描文件...
 │   └── 技术文档.md
 ├── 项目管理/
 │   ├── 项目规划.md
-│   └── 会议记录.md
+│   └── 会议记附录.md
 └── 产品设计/
     └── 产品需求.md
 
@@ -1076,14 +1076,14 @@ https://notion.so/workspace/notes-import
 **技巧1：自定义模板**
 
 ```bash
-# 创建会议记录模板
+# 创建会议记附录模板
 openclaw notion template create "meeting" \
-  --title "会议记录-{date}" \
-  --properties "主题,时间,参会人,内容,决策,任务" \
+  --title "会议记附录-{date}" \
+  --properties "主题,时间,参会人,内内容,决策,任务" \
   --database "meetings-db-id"
 
 # 使用模板
-你：用会议模板创建今天的会议记录
+你：用会议模板创建今天的会议记附录
 ```text
 **技巧2：自动化工作流**
 
@@ -1111,13 +1111,13 @@ openclaw config set notion.bidirectional true
 # Notion更新会自动同步到本地
 # 本地更新会自动同步到Notion
 ```text
-### 10.2.7 常见问题
+### 10.2.7 常见访问题
 
-**Q1：API调用失败怎么办？**
+**Q1：API调用失败怎么怎么办？**
 
 A：检查以下几点：
 - API Key是否正确
-- Integration是否已分享给页面
+- Integration是否已分分享给页面
 - API版本是否匹配
 - 网络连接是否正常
 
@@ -1162,7 +1162,7 @@ openclaw config set notion.dedup '{
 | 创建笔记 | 5分钟 | 5秒 | 4分55秒 | 98.3% |
 | 更新数据库 | 10分钟 | 10秒 | 9分50秒 | 98.3% |
 | 批量导入 | 60分钟 | 2分钟 | 58分钟 | 96.7% |
-| 会议记录 | 30分钟 | 1分钟 | 29分钟 | 96.7% |
+| 会议记附录 | 30分钟 | 1分钟 | 29分钟 | 96.7% |
 
 **成本参考：**
 - Notion API：免费（有速率限制）
@@ -1181,7 +1181,7 @@ AI视频生成是新兴的创意工具，可以将文字脚本自动转换为视
 - 🎬 短视频创作：快速生成抖音、快手短视频
 - 📺 长视频制作：B站、YouTube教程视频
 - 🎥 营销视频：产品介绍、广告宣传
-- 🎞️ 教育视频：课程讲解、知识分享
+- 🎞️ 教育视频：课程讲解、知识分分享
 
 **效率提升：**
 - 手动剪辑：2-4小时/视频
@@ -1225,16 +1225,16 @@ npx clawhub@latest install veo3-video-gen
 • 支持多种风格
 • 适合短视频创作
 ```text
-**4. tube-cog - YouTube内容创作**
+**4. tube-cog - YouTube内内容创作**
 ```bash
 # 安装
 npx clawhub@latest install tube-cog
 
 # 功能
-• YouTube内容创作
+• YouTube内内容创作
 • 由CellCog提供支持
 • 完整视频制作流程
-• 自动化发布
+• 自动化发布布
 ```text
 **5. video-cog - 长篇视频制作**
 ```bash
@@ -1289,7 +1289,7 @@ nano ~/.openclaw/openclaw.json
 **示例1：生成AI头像视频**
 
 ```
-你：生成1个30秒的AI头像视频，内容是：
+你：生成1个30秒的AI头像视频，内内容是：
 
 主题：OpenClaw快速入门
 脚本：
@@ -1355,7 +1355,7 @@ https://video.openclaw.com/abc123
 第2集：如何安装 OpenClaw
 第3集：基础配置教程
 第4集：Skills扩展使用
-第5集：实战案例分享
+第5集：实战案例分分享
 
 OpenClaw：好的，正在批量生成...
 
@@ -1381,7 +1381,7 @@ OpenClaw：好的，正在批量生成...
 第4集：Skills扩展使用
 [████████████████████] 100% ✅
 
-第5集：实战案例分享
+第5集：实战案例分分享
 [████████████████████] 100% ✅
 
 ✅ 全部生成完成！
@@ -1397,7 +1397,7 @@ OpenClaw：好的，正在批量生成...
 2. ✅ 02_如何安装 OpenClaw.mp4 (28MB)
 3. ✅ 03_基础配置教程.mp4 (32MB)
 4. ✅ 04_Skills扩展使用.mp4 (35MB)
-5. ✅ 05_实战案例分享.mp4 (25MB)
+5. ✅ 05_实战案例分分享.mp4 (25MB)
 
 💰 总成本：
 • 生成费用：$15.00
@@ -1414,7 +1414,7 @@ https://video.openclaw.com/series/abc123
 
 **案例1：自动化短视频创作**
 
-场景：每天自动生成一条知识分享短视频。
+场景：每天自动生成一条知识分分享短视频。
 
 ```bash
 # 创建自动化脚本
@@ -1533,9 +1533,9 @@ openclaw video batch \
   --parallel 3 \
   --output "videos/"
 ```text
-### 10.3.7 常见问题
+### 10.3.7 常见访问题
 
-**Q1：视频生成失败怎么办？**
+**Q1：视频生成失败怎么怎么办？**
 
 A：检查以下几点：
 - API Key是否正确
@@ -1547,7 +1547,7 @@ A：检查以下几点：
 
 A：
 - 使用高质量模式
-- 优化脚本内容
+- 优化脚本内内容
 - 选择合适的头像和音色
 - 添加背景音乐和特效
 
@@ -1555,7 +1555,7 @@ A：
 
 A：
 - 使用标准质量模式
-- 批量生成享受折扣
+- 批量生成分享受折扣
 - 复用头像和音色
 - 合理规划视频时长
 
@@ -1582,13 +1582,13 @@ A：
 ### 10.4.1 为什么要集成语音服务？
 
 **应用场景：**
-- 📚 有声读物：将文章、书籍转换为音频
+- 📚 有声读物：将文章节、书籍转换为音频
 - 🎙️ 视频配音：为视频添加专业配音
 - 🔊 语音助手：实现语音交互功能
-- 📻 播客制作：快速生成播客内容
+- 📻 播客制作：快速生成播客内内容
 
 **效率提升：**
-- 人工录音：30-60分钟/千字
+- 人工附录音：30-60分钟/千字
 - AI合成：1-2分钟/千字
 - 效率提升：95-98%
 
@@ -1747,10 +1747,10 @@ OpenClaw：好的，正在转换...
 🔗 在线试听：
 https://audio.openclaw.com/abc123
 ```text
-**示例2：批量转换文章**
+**示例2：批量转换文章节**
 
 ```
-你：把这个文件夹里的所有文章都转换为音频
+你：把这个文件夹里的所有文章节都转换为音频
 
 文件夹：~/Documents/articles/
 
@@ -1792,7 +1792,7 @@ OpenClaw：好的，正在扫描文件...
 • 总计：$7.62
 
 📦 已打包：
-• 有声文章合集.zip (115MB)
+• 有声文章节合集.zip (115MB)
 
 🔗 下载链接：
 https://audio.openclaw.com/batch/abc123
@@ -1808,9 +1808,9 @@ https://audio.openclaw.com/batch/abc123
 
 文件：OpenClaw完全指南.pdf
 要求：
-- 分章节转换
-- 每章单独文件
-- 添加章节标题语音
+- 分章节节转换
+- 每章节单独文件
+- 添加章节节标题语音
 - 生成播放列表
 
 OpenClaw：好的，正在处理...
@@ -1819,14 +1819,14 @@ OpenClaw：好的，正在处理...
 
 📖 电子书信息：
 • 书名：OpenClaw完全指南
-• 章节数：16章
+• 章节节数：16章节
 • 总字数：80,000字
 • 预计时长：约3小时
 
 ⏳ 处理进度：
 
 1. PDF文本提取 [████████████████████] 100%
-2. 章节分割 [████████████████████] 100%
+2. 章节节分割 [████████████████████] 100%
 3. 语音合成 [████████████████████] 100%
 4. 音频处理 [████████████████████] 100%
 5. 播放列表生成 [████████████████████] 100%
@@ -1836,9 +1836,9 @@ OpenClaw：好的，正在处理...
 📁 文件结构：
 OpenClaw完全指南_有声版/
 ├── 00_书名和前言.mp3 (5分钟)
-├── 01_第1章_OpenClaw简介.mp3 (10分钟)
-├── 02_第2章_快速开始.mp3 (12分钟)
-├── 03_第3章_基础配置.mp3 (15分钟)
+├── 01_第1章节_OpenClaw简介.mp3 (10分钟)
+├── 02_第2章节_快速开始.mp3 (12分钟)
+├── 03_第3章节_基础配置.mp3 (15分钟)
 ... (共17个文件)
 ├── playlist.m3u (播放列表)
 └── metadata.json (元数据)
@@ -1847,7 +1847,7 @@ OpenClaw完全指南_有声版/
 • 总时长：3小时5分钟
 • 总大小：450MB
 • 音频格式：MP3 192kbps
-• 章节数：16章 + 前言
+• 章节节数：16章节 + 前言
 
 💰 总成本：$24.00
 
@@ -1955,9 +1955,9 @@ openclaw tts batch \
   --parallel 5 \
   --output "audios/"
 ```text
-### 10.4.8 常见问题
+### 10.4.8 常见访问题
 
-**Q1：语音听起来不自然怎么办？**
+**Q1：语音听起来不自然怎么怎么办？**
 
 A：
 - 使用更高质量的模型
@@ -1984,7 +1984,7 @@ openclaw tts generate \
 
 A：
 - 选择性价比高的服务
-- 批量处理享受折扣
+- 批量处理分享受折扣
 - 复用常用音色
 - 合理控制音频质量
 
@@ -2005,7 +2005,7 @@ openclaw tts generate \
 ```text
 ### 10.4.9 效率提升数据
 
-| 任务类型 | 人工录音 | AI合成 | 节省时间 | 提升比例 |
+| 任务类型 | 人工附录音 | AI合成 | 节省时间 | 提升比例 |
 |---------|---------|--------|----------|----------|
 | 短文本（100字） | 10分钟 | 30秒 | 9.5分钟 | 95.0% |
 | 中文本（1000字） | 60分钟 | 2分钟 | 58分钟 | 96.7% |
@@ -2013,18 +2013,18 @@ openclaw tts generate \
 | 批量转换（10篇） | 6000分钟 | 120分钟 | 5880分钟 | 98.0% |
 
 **成本对比：**
-- 人工录音：$50-200/千字
+- 人工附录音：$50-200/千字
 - AI合成：$0.015-0.30/千字
 - 成本节省：99%+
 
 **质量对比：**
-- 人工录音：⭐⭐⭐⭐⭐（最自然，但成本高）
+- 人工附录音：⭐⭐⭐⭐⭐（最自然，但成本高）
 - AI合成（高端）：⭐⭐⭐⭐⭐（接近人工，成本低）
 - AI合成（标准）：⭐⭐⭐⭐（质量好，性价比高）
 
 ---
 
-## 📦 本章Skills完整安装指南
+## 📦 本章节Skills完整安装指南
 
 ### ⚠️ 重要说明
 
@@ -2067,7 +2067,7 @@ chmod +x install_api_skills.sh
 ./install_api_skills.sh --help
 
 # 安装特定场景的Skills
-./install_api_skills.sh content    # 内容创作者
+./install_api_skills.sh content    # 内内容创作者
 ./install_api_skills.sh video      # 视频UP主
 ./install_api_skills.sh knowledge  # 知识工作者
 ./install_api_skills.sh marketing  # 营销人员
@@ -2113,7 +2113,7 @@ npx clawhub@latest install openai-tts
 
 ### 分场景安装建议
 
-**场景1：内容创作者（必装）**
+**场景1：内内容创作者（必装）**
 ```bash
 npx clawhub@latest install fal-ai
 npx clawhub@latest install elevenlabs
@@ -2130,7 +2130,7 @@ npx clawhub@latest install tube-cog
 npx clawhub@latest install elevenlabs
 ```text
 - video-agent：AI头像视频
-- tube-cog：YouTube内容创作
+- tube-cog：YouTube内内容创作
 - elevenlabs：专业配音
 
 **场景3：知识工作者（推荐）**
@@ -2205,11 +2205,11 @@ npx clawhub@latest install openai-tts
 ✅ 设置Token限制
 ✅ 选择合适的质量等级
 ✅ 利用免费额度
-✅ 批量购买享受折扣
+✅ 批量购买分享受折扣
 ```text
-### 常见问题
+### 常见访问题
 
-**Q1：Skills 安装失败怎么办？**
+**Q1：Skills 安装失败怎么怎么办？**
 ```bash
 # 检查网络连接
 ping github.com
@@ -2223,7 +2223,7 @@ npx clawhub@latest install <skill-name>
 # 查看详细错误
 npx clawhub@latest install <skill-name> --verbose
 ```text
-**Q2：Skills加载失败怎么办？**
+**Q2：Skills加载失败怎么怎么办？**
 ```bash
 # 查看Skills列表
 openclaw skills list
@@ -2237,7 +2237,7 @@ openclaw skills info <skill-name>
 # 重启OpenClaw
 openclaw restart
 ```text
-**Q3：API调用失败怎么办？**
+**Q3：API调用失败怎么怎么办？**
 ```bash
 # 检查API配置
 openclaw config get api
@@ -2311,7 +2311,7 @@ openclaw stats --period 6m
 # 只加载需要的Skills
 openclaw config set skills.lazy-load true
 
-# 设置并发限制
+# 设置并发布限制
 openclaw config set skills.max-concurrent 3
 
 # 启用缓存
@@ -2340,11 +2340,11 @@ openclaw cost export --format csv
 
 **技巧1：使用配置文件管理Skills**
 ```bash
-# 创建内容创作配置
+# 创建内内容创作配置
 cat > ~/.openclaw/profiles/content-creation.json <<EOF
 {
   "skills": ["fal-ai", "video-agent", "elevenlabs", "notion"],
-  "description": "内容创作工具集"
+  "description": "内内容创作工具集"
 }
 EOF
 
@@ -2449,7 +2449,7 @@ openclaw workflow status "daily-content"
 ```text
 ### 故障排查
 
-**问题1：Skills无法加载**
+**访问题1：Skills无法加载**
 
 可能原因：
 - 依赖未安装
@@ -2471,7 +2471,7 @@ openclaw config validate
 # 修复权限
 chmod -R 755 ~/.openclaw/skills/
 ```text
-**问题2：API调用超时**
+**访问题2：API调用超时**
 
 可能原因：
 - 网络不稳定
@@ -2490,7 +2490,7 @@ openclaw config set api.proxy "http://proxy:port"
 openclaw config set api.retry.enabled true
 openclaw config set api.retry.max 3
 ```text
-**问题3：成本超支**
+**访问题3：成本超支**
 
 可能原因：
 - 使用频率过高
@@ -2514,11 +2514,11 @@ openclaw cost detail --period 1d
 ```text
 ---
 
-## 本章小结
+## 本章节小结
 
-本章详细介绍了OpenClaw与第三方API服务的集成方法，涵盖了4个核心应用场景：
+本章节详细介绍了OpenClaw与第三方API服务的集成方法，涵盖了4个核心应用场景：
 
-### 核心内容回顾
+### 核心内内容回顾
 
 **10.1 AI绘图服务集成** - 效率提升90%+
 - 完整的bananapro-image-gen Skill安装和配置教程
@@ -2529,7 +2529,7 @@ openclaw cost detail --period 1d
 **10.2 Notion数据同步** - 效率提升98%+
 - 3个推荐的Notion集成Skills（notion, notion-mcp, notion-database）
 - 完整的API配置和权限设置流程
-- 自动创建笔记、批量导入、会议记录等实战案例
+- 自动创建笔记、批量导入、会议记附录等实战案例
 - 自定义模板和自动化工作流配置
 
 **10.3 视频生成服务** - 效率提升90%+
@@ -2595,11 +2595,11 @@ openclaw cost detail --period 1d
 
 **3. 成本控制**
 - 使用合适的质量等级
-- 批量处理享受折扣
+- 批量处理分享受折扣
 - 复用生成结果
 
 **4. 质量提升**
-- 优化输入内容（提示词、脚本、文本）
+- 优化输入内内容（提示词、脚本、文本）
 - 使用高质量模型
 - 进行后期处理
 
@@ -2620,21 +2620,21 @@ openclaw cost detail --period 1d
 
 ---
 
-**下一章预告：** 第11章 高级配置（多模型切换/成本优化/性能调优）
+**下一章节预告：** 第11章节 高级配置（多模型切换/成本优化/性能调优）
 
 
 ---
 
 ## 🌐 在线阅读
 
-📖 **想在线阅读此章节？**
+📖 **想在线阅读此章节节？**
 
-[🔗 在线阅读此章节](https://awesome.tryopenclaw.asia/docs/03-advanced/10-api-integration/)
+[🔗 在线阅读此章节节](https://awesome.tryopenclaw.asia/docs/03-advanced/10-api-integration/)
 
 访问网站获取更好的阅读体验：
 - 📱 响应式设计，支持手机、平板、电脑
-- ���� 支持黑暗模式，保护眼睛
-- 🔍 内置搜索功能，快速定位内容
-- 📋 目录导航，轻松跳转章节
+-  支持黑暗模式，保护眼睛
+- 🔍 内置搜索功能，快速定位内内容
+- 📋 目附录导航，轻松跳转章节节
 
-[🏠 访问完整教���网站](https://awesome.tryopenclaw.asia)
+[🏠 访问完整教网站](https://awesome.tryopenclaw.asia)

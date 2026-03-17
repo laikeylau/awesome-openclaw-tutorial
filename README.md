@@ -18,7 +18,7 @@
 
 ## 📖 新书预告：《OpenClaw超级个体实操手册》
 
-⚠️ **本教程早期内容存在AI生成未验证的问题**（[#34](https://github.com/xianyu110/awesome-openclaw-tutorial/issues/34)），正在分批修正中。
+⚠️ **本教程早期内内容存在AI生成未验证的访问题**（[#34](https://github.com/xianyu110/awesome-openclaw-tutorial/issues/34)），正在分批修正中。
 
 纸质书在此基础上做了**全面重写+逐条验证**：
 - 🔍 144条CLI命令对照官方文档逐条核对（教程中约60%已删除或修正）
@@ -32,15 +32,15 @@
 
 ## 🎉 项目状态
 
-**教程已完成，正在持续优化中！** 🎊
+**教程已完成，正在支持续优化中！** 🎊
 
-- ✅ **15章正文**：约267,000字（新增多 Agent 配置）
+- ✅ **15章节正文**：约267,000字（新增多 Agent 配置）
 - ✅ **15个附录**：约141,000字
 - ✅ **总字数**：约408,000字
 - ✅ **70+实战案例**：可直接应用
 - ✅ **完整配图**：50+张配置截图
-- 🔄 **持续优化**：删除重复内容，提升质量
-- 🆕 **新增内容**：多 Agent 配置（第9章）、超级个体实战案例（第15章）、AI绘图实战（第14章）、完整附录体系（附录A-N + F视频教程）
+- 🔄 **支持续优化**：删除重复内内容，提升质量
+- 🆕 **新增内内容**：多 Agent 配置（第9章节）、超级个体实战案例（第15章节）、AI绘图实战（第14章节）、完整附录体系（附录A-N + F视频教程）
 
 👉 [查看完整项目总结](PROJECT-SUMMARY.md) | [查看最新更新](CHANGELOG.md)
 
@@ -48,7 +48,7 @@
 
 ## 📢 2026年3月更新（v1.6）
 
-### 🗂 更新文章索引
+### 🗂 更新文章节索引
 
 - **2026-03-13（v2026.3.12）**：更新解读见 [updates/2026-03-13-v2026.3.12.md](updates/2026-03-13-v2026.3.12.md)
 - **2026-03-14（v2026.3.13）**：更新解读见 [updates/2026-03-14-v2026.3.13.md](updates/2026-03-14-v2026.3.13.md)
@@ -56,7 +56,7 @@
 
 ### 🚀 版本更新至 v2026.3.12
 
-**OpenClaw 最新版本 v2026.3.12 已发布！**（2026年3月13日）
+**OpenClaw 最新版本 v2026.3.12 已发布布！**（2026年3月13日）
 
 #### 🎛️ Control UI 全面升级（Dashboard v2）
 - **模块化视图设计**：全新的概览、聊天、配置、Agent 和会话视图
@@ -76,12 +76,12 @@
 #### 🔒 安全增强（重要！）
 - **设备配对安全**：`/pair` 和 `openclaw qr` 使用短期引导令牌
 - **插件信任机制**：禁用隐式工作区插件自动加载，需要明确信任决定
-- **命令权限控制**：`/config` 和 `/debug` 要求发送者所有权
-- **网关认证强化**：清除共享令牌 WebSocket 连接的未绑定客户端声明
+- **命令权限控制**：`/config` 和 `/debug` 要求发布送者所有权
+- **网关认证强化**：清除共分享令牌 WebSocket 连接的未绑定客户端声明
 
 #### 🐛 重要修复
-- **Kimi Coding**：恢复以原生 Anthropic 格式发送工具
-- **TUI**：修复重复的助手回复渲染问题
+- **Kimi Coding**：恢复以原生 Anthropic 格式发布送工具
+- **TUI**：修复重复的助手回复渲染访问题
 - **macOS**：添加缺失的 `NSRemindersUsageDescription`
 - **Windows**：原生更新使用 npm 更新路径
 - **Mattermost**：修复块流激活时的重复消息传递
@@ -101,19 +101,19 @@ openclaw gateway restart
 
 ### 🚀版本更新至 v2026.3.13
 
-**OpenClaw 最新版本 v2026.3.13 已发布！**（2026年3月14日）
+**OpenClaw 最新版本 v2026.3.13 已发布布！**（2026年3月14日）
 
 - 📱 **移动端体验升级**：Android 聊天设置页重做；iOS 首次启动引导更清晰（Connect 步骤提示 `/pair qr`）
 - 🌐 **浏览器能力增强**：支持 Chrome DevTools MCP attach（接管已登录 Chrome）；新增 `profile="user"` / `profile="chrome-relay"`；`browser.act` 支持批量 actions/selector/延迟点击
 - 🧊 **Docker 时区可控**：新增 `OPENCLAW_TZ`
-- 🐛 **关键修复**：Dashboard v2 工具结果回传卡顿、Gateway RPC pending 泄漏回收、plugin-sdk 打包内存问题、Ollama reasoning 不再泄露到最终文本
+- 🐛 **关键修复**：Dashboard v2 工具结果回传卡顿、Gateway RPC pending 泄漏回收、plugin-sdk 打包内存访问题、Ollama reasoning 不再泄露到最终文本
 
 >详细解读：见 [updates/2026-03-14-v2026.3.13.md](updates/2026-03-14-v2026.3.13.md)
 
 
-### 🌍 Skills生态大爆发
+### 🌍 Skills生态大爆发布
 
-从1800+到**492,000+**！2026年初AI Agent Skills市场呈现爆发式增长：
+从1800+到**492,000+**！2026年初AI Agent Skills市场呈现爆发布式增长：
 
 - ⭐ **Skills.sh**（Vercel出品）：87,000+ Skills，支持37+AI编码工具
 - 🔥 **SkillsMP**：400,000+ Agent Skills，开放SKILL.md标准
@@ -126,10 +126,10 @@ openclaw gateway restart
 |------|--------|--------|
 | **附录数量** | 14个（A-N） | 15个（A-N+F视频教程）✨ |
 | **总字数** | 41.8万字 | 40.8万字 |
-| **章节数** | 15章+14附录 | 15章+15附录 |
+| **章节节数** | 15章节+14附录 | 15章节+15附录 |
 | **适用版本** | v2026.3.7 | v2026.3.12 |
 
-👉 **[查看公众号文章](公众号文章-2026年3月更新.md)** 了解详细更新内容
+👉 **[查看公众号文章节](公众号文章节-2026年3月更新.md)** 了解详细更新内内容
 
 ---
 
@@ -171,15 +171,15 @@ openclaw gateway restart
 
 ### 🔧 2026.3.2 版本：AI变"哑巴"了？
 
-**问题现象**：升级到 2026.3.2 后，OpenClaw只能聊天不能干活（文件管理、命令执行等工具功能全部失效）
+**访问题现象**：升级到 2026.3.2 后，OpenClaw只能聊天不能干活（文件管理、命令执行等工具功能全部失效）
 
-**问题原因**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式）
+**访问题原因**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式）
 
 **5种 profile 说明**：
 
 | Profile | 功能说明 |
 |---------|---------|
-| `messaging` | 只能发消息、管理会话（光聊天不干活） |
+| `messaging` | 只能发布消息、管理会话（光聊天不干活） |
 | `default` | 默认工具集（不含命令执行） |
 | `coding` | 编程相关工具 |
 | `full` | 完整工具集，包含命令执行（**推荐**） |
@@ -224,42 +224,42 @@ openclaw gateway restart
 
 ---
 
-## 🆘 遇到问题？快速解决
+## 🆘 遇到访问题？快速解决
 
 <table>
 <tr>
 <td width="50%">
 
-### 🔧 安装问题
-- [安装失败怎么办？](appendix/E-common-problems.md#安装配置问题)
+### 🔧 安装访问题
+- [安装失败怎么怎么办？](appendix/E-common-problems.md#安装配置访问题)
 - [Node.js版本不对？](docs/01-basics/02-installation.md#系统要求)
-- [权限错误？](appendix/E-common-problems.md#权限问题)
-- [网络超时？](appendix/E-common-problems.md#网络问题)
+- [权限错误？](appendix/E-common-problems.md#权限访问题)
+- [网络超时？](appendix/E-common-problems.md#网络访问题)
 
 </td>
 <td width="50%">
 
-### 🔌 连接问题
-- [API连接失败？](appendix/E-common-problems.md#api连接问题)
-- [飞书Bot不回复？](docs/03-advanced/09-multi-platform-integration.md#常见问题)
-- [Gateway启动失败？](appendix/E-common-problems.md#gateway问题)
-- [端口被占用？](appendix/E-common-problems.md#端口问题)
+### 🔌 连接访问题
+- [API连接失败？](appendix/E-common-problems.md#api连接访问题)
+- [飞书Bot不回复？](docs/03-advanced/09-multi-platform-integration.md#常见访问题)
+- [Gateway启动失败？](appendix/E-common-problems.md#gateway访问题)
+- [端口被占用？](appendix/E-common-problems.md#端口访问题)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🧩 Skills问题
+### 🧩 Skills访问题
 - [Skills安装失败？](docs/03-advanced/08-skills-extension.md#故障排查)
-- [Skills不生效？](docs/03-advanced/08-skills-extension.md#常见问题)
+- [Skills不生效？](docs/03-advanced/08-skills-extension.md#常见访问题)
 - [如何卸载Skills？](docs/03-advanced/08-skills-extension.md#技能管理)
 - [Skills冲突？](docs/03-advanced/08-skills-extension.md#版本管理)
 
 </td>
 <td width="50%">
 
-### 💰 成本问题
+### 💰 成本访问题
 - [API费用太高？](docs/03-advanced/11-advanced-configuration.md#成本优化)
 - [如何选择模型？](docs/01-basics/03-quick-start.md#模型选择指南)
 - [国产模型推荐？](appendix/C-api-comparison.md)
@@ -271,7 +271,7 @@ openclaw gateway restart
 
 **找不到答案？**
 - 📖 [查看完整FAQ](appendix/E-common-problems.md)
-- 💬 [提交问题](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
+- 💬 [提交访问题](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
 - 🐛 [报告Bug](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
 
 ---
@@ -324,23 +324,23 @@ openclaw gateway restart
 
 ## 📖 关于本教程
 
-> ⚠️ **版本说明**：由于 OpenClaw 仍在快速开发中，本教程基于 **2026.3.8** 版本编写。该版本经过充分验证，稳定可靠。（已验证）
+> ⚠️ **版本说明**：由于 OpenClaw 仍在快速开发布中，本教程基于 **2026.3.8** 版本编写。该版本经过充分验证，稳定可靠。（已验证）
 
 > 💡 **重要前提**：OpenClaw 预装了 **49个内置技能（Skills）**，本教程中的大部分功能演示都基于这些内置技能。这些技能涵盖文件管理、知识管理、日程管理、自动化等核心场景，开箱即用。
 > 
 > 📊 **Skills 生态**：内置49个 + 官方93个 + 社区1715+个 = 总计1800+个可用 Skills。详见 [Skills 生态说明](docs/skills-ecosystem.md)。
 
-这是一份**完全免费、持续更新**的OpenClaw中文教程，专为**超级个体**打造，基于：
-- ✅ **263,000字完整内容**：15章正文 + 4个附录
+这是一份**完全免费、支持续更新**的OpenClaw中文教程，专为**超级个体**打造，基于：
+- ✅ **263,000字完整内内容**：15章节正文 + 4个附录
 - ✅ **70+实战案例**：来自真实使用经验
 - ✅ **57+配置截图**：手把手图文教学
-- ✅ **43篇实战文章**：经过两万人社区验证
+- ✅ **43篇实战文章节**：经过两万人社区验证
 - ✅ **20+篇官方教程**：腾讯云官方教程体系
 - 🎉 **最新补充**：百度Skills生态、Coding Agent、多Agent头脑风暴
 
 > **注意**：旧版ClawdBot已停止维护，本教程已全面更新为OpenClaw最新版本。
 > 
-> **项目名称演变**：Clawdbot → Moltbot → OpenClaw（2026年1月因商标问题更名，功能完全一致）
+> **项目名称演变**：Clawdbot → Moltbot → OpenClaw（2026年1月因商标访问题更名，功能完全一致）
 
 ### 🎯 教程特色
 
@@ -356,8 +356,8 @@ openclaw gateway restart
 - 🚀 **超级个体**：想要一个人顶一个团队，实现个人价值最大化
 - 🔰 **完全新手**：从零开始，手把手教你安装配置
 - 💼 **知识工作者**：学习如何用OpenClaw提升10倍个人效率
-- 👨‍💻 **开发者**：深入了解Skills开发和API集成
-- ✍️ **内容创作者**：探索自动化工作流和高级应用
+- 👨‍💻 **开发布者**：深入了解Skills开发布和API集成
+- ✍️ **内内容创作者**：探索自动化工作流和高级应用
 
 ## 🚀 快速开始
 
@@ -366,13 +366,13 @@ openclaw gateway restart
 **推荐配置（获得最佳体验）**：
 
 **操作系统**：
-- 🍎 **Mac（强烈推荐）**：原生支持最完善，可操作日历、备忘录、截图等系统功能
+- 🍎 **Mac（强烈推荐）**：原生支持最完善，可操作日历、备忘附录、截图等系统功能
 - 🪟 Windows：完全可用，但部分系统集成功能受限
-- 🐧 Linux：适合开发者，配置灵活
+- 🐧 Linux：适合开发布者，配置灵活
 
 **IM工具选择**：
 - 🌍 **国外用户**：推荐 **Telegram**（适配度最好，功能最完整）
-- 🇨🇳 **国内用户**：推荐 **飞书**（现代化、开发友好、功能丰富）
+- 🇨🇳 **国内用户**：推荐 **飞书**（现代化、开发布友好、功能丰富）
 - 备选：企业微信、钉钉、QQ
 
 **部署方式**：
@@ -398,21 +398,21 @@ openclaw gateway restart
 ### 新手推荐路径
 
 **如果你有Mac电脑**：
-1. **[第1章：认识OpenClaw](docs/01-basics/01-introduction.md)** - 了解OpenClaw是什么
-2. **[第2章：Mac本地部署](docs/01-basics/02-installation.md#mac本地部署推荐)** - 10分钟完成安装
-3. **[第9章：飞书Bot配置](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置)** - 接入飞书，随时使用
-4. **[第3章：快速上手](docs/01-basics/03-quick-start.md)** - 发送第一条消息
+1. **[第1章节：认识OpenClaw](docs/01-basics/01-introduction.md)** - 了解OpenClaw是什么
+2. **[第2章节：Mac本地部署](docs/01-basics/02-installation.md#mac本地部署推荐)** - 10分钟完成安装
+3. **[第9章节：飞书Bot配置](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置)** - 接入飞书，随时使用
+4. **[第3章节：快速上手](docs/01-basics/03-quick-start.md)** - 发布送第一条消息
 
 **如果你没有Mac或想24小时运行**：
-1. **[第1章：认识OpenClaw](docs/01-basics/01-introduction.md)** - 了解OpenClaw是什么
-2. **[第2章：云端部署](docs/01-basics/02-installation.md#云端一键部署)** - 5分钟完成部署
-3. **[第9章：飞书Bot配置](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置)** - 接入飞书，手机随时用
-4. **[第3章：快速上手](docs/01-basics/03-quick-start.md)** - 发送第一条消息
+1. **[第1章节：认识OpenClaw](docs/01-basics/01-introduction.md)** - 了解OpenClaw是什么
+2. **[第2章节：云端部署](docs/01-basics/02-installation.md#云端一键部署)** - 5分钟完成部署
+3. **[第9章节：飞书Bot配置](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置)** - 接入飞书，手机随时用
+4. **[第3章节：快速上手](docs/01-basics/03-quick-start.md)** - 发布送第一条消息
 
 ### Mac本地部署（推荐有Mac用户）
 
 如果你有Mac电脑，强烈推荐本地部署：
-- 🍎 **系统集成**：可操作日历、备忘录、文件系统
+- 🍎 **系统集成**：可操作日历、备忘附录、文件系统
 - 🔒 **隐私安全**：数据完全本地，不上传云端
 - ⚡ **响应速度快**：本地运行，无网络延迟
 - 💰 **成本低**：无需购买云服务器
@@ -442,103 +442,103 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 👉 [查看完整云端部署教程](docs/01-basics/02-installation.md#云端一键部署)
 
-## 📚 教程目录
+## 📚 教程目附录
 
-### 🎯 第一部分：零基础入门（3章）
+### 🎯 第一部分：零基础入门（3章节）
 
-#### [第1章：OpenClaw是什么？能帮你做什么？](docs/01-basics/01-introduction.md)
+#### [第1章节：OpenClaw是什么？能帮你做什么？](docs/01-basics/01-introduction.md)
 > 5分钟了解OpenClaw核心价值，看看它如何让你效率提升10倍
 - 🤖 OpenClaw vs ChatGPT/Copilot：为什么选OpenClaw？
 - ⚡ 4大核心优势：本地文件、自动化、多平台、可扩展
 - 💼 5类人群的典型应用场景（知识工作者/程序员/创作者/学生/超级个体）
 - 📊 真实效率数据：文档处理提升81%，硬盘清理提升92%
 
-#### [第2章：5分钟完成部署（多种方案任选）](docs/01-basics/02-installation.md)
+#### [第2章节：5分钟完成部署（多种方案任选）](docs/01-basics/02-installation.md)
 > 手把手图文教程，新手也能轻松搞定，推荐云端部署随时随地用
 - ☁️ 云端一键部署：腾讯云20元/月、火山引擎9.9元/月（含视频教程）
 - 🇨🇳 国内一键安装：官方中文版脚本，速度快、配置简单
 - ☁️ Cloudflare Workers：全球CDN加速，5美元/月（进阶）
-- 🐳 Docker部署：环境隔离，开发者选项
+- 🐳 Docker部署：环境隔离，开发布者选项
 - 💻 本地安装：Mac/Windows/Linux完整教程
 - 🔑 API配置：国产大模型省95%成本（DeepSeek/Kimi/GLM-4）
 - 🎯 中转API：一个地址访问300+模型，统一计费更省钱
-- ⚠️ 10个常见安装问题及解决方案
+- ⚠️ 10个常见安装访问题及解决方案
 
-#### [第3章：发送第一条消息，配置你的专属AI助手](docs/01-basics/03-quick-start.md)
+#### [第3章节：发布送第一条消息，配置你的专属AI助手](docs/01-basics/03-quick-start.md)
 > 从零开始对话，学会基本命令和人设配置，让AI更懂你
-- 💬 第一次对话：测试连接、基础问答
+- 💬 第一次对话：测试连接、基础访问答
 - 📝 10个常用命令：文件搜索、日程创建、网页存档
 - 🎭 人设配置技巧：让AI成为你的专属助手
 - 🧠 模型选择指南：什么场景用什么模型最省钱
 
 ---
 
-### 🚀 第二部分：4大核心功能（4章）
+### 🚀 第二部分：4大核心功能（4章节）
 
-#### [第4章：本地文件管理神器（效率提升81%）](docs/02-core-features/04-file-management.md)
+#### [第4章节：本地文件管理神器（效率提升81%）](docs/02-core-features/04-file-management.md)
 > 告别手动翻找文件，AI帮你秒找、批量处理、自动整理
-- 🔍 智能搜索：从1000张图片中找到跑步机发票（真实案例）
+- 🔍 智能搜索：从1000张图片中找到跑步机发布票（真实案例）
 - 📋 批量处理：自动填写报销单Excel，处理100+文件
-- 🗂️ 自动整理：根据内容智能分类和重命名
+- 🗂️ 自动整理：根据内内容智能分类和重命名
 - 🧹 硬盘清理：释放50GB空间，效率提升92%
 
-#### [第5章：个人知识库（网页/论文/GitHub一键存档）](docs/02-core-features/05-knowledge-management.md)
+#### [第5章节：个人知识库（网页/论文/GitHub一键存档）](docs/02-core-features/05-knowledge-management.md)
 > 构建你的第二大脑，所有知识随时调用，跨设备同步
-- 📰 网页剪藏：技术文章自动总结并存储到备忘录
+- 📰 网页剪藏：技术文章节自动总结并存储到备忘附录
 - 📚 论文管理：PDF自动解析、提取关键信息
 - 💻 GitHub项目：自动追踪、生成学习笔记
 - ☁️ 跨设备同步：Mac、iPhone无缝衔接
 
-#### [第6章：日程管理（微信截图秒变日历事件）](docs/02-core-features/06-schedule-management.md)
-> 告别手动输入，截图发给AI自动创建日历，同步到iPhone
+#### [第6章节：日程管理（微信截图秒变日历事件）](docs/02-core-features/06-schedule-management.md)
+> 告别手动输入，截图发布给AI自动创建日历，同步到iPhone
 - 📸 微信截图识别：自动提取时间、地点、参与人
 - 📅 日历自动创建：支持Apple日历、Google日历
 - 📥 批量导入：Excel日程表一键导入
 - ⏰ 智能提醒：不错过任何重要事项
 
-#### [第7章：自动化工作流（定时任务/网站监控/AI日报）](docs/02-core-features/07-automation-workflow.md)
+#### [第7章节：自动化工作流（定时任务/网站监控/AI日报）](docs/02-core-features/07-automation-workflow.md)
 > 让AI 24小时为你工作，监控网站、推送日报、执行定时任务
 - ⏰ 定时任务：每天9点自动推送AI行业日报
-- 🔔 网站监控：Claude 5发布立即通知（真实案例）
+- 🔔 网站监控：Claude 5发布布立即通知（真实案例）
 - 📊 日报推送：聚合多个信息源，自动生成摘要
 - 🔄 循环任务：周报、月报自动生成
 
 ---
 
-### 💎 第三部分：进阶技能（4章)
+### 💎 第三部分：进阶技能（4章节)
 
-#### [第8章：Skills扩展（1800+个技能让AI无所不能）](docs/03-advanced/08-skills-extension.md)
+#### [第8章节：Skills扩展（1800+个技能让AI无所不能）](docs/03-advanced/08-skills-extension.md)
 > ClawHub技能市场，一键安装，让AI能力无限扩展
 > 
 > 📊 **Skills 生态**：内置49个 + 官方93个 + 社区1715+个 = 总计1800+个（详见 [Skills 生态说明](docs/skills-ecosystem.md)）
 
 - 🏪 ClawHub 官方市场：93个精选 Skills
 - ⭐ 必装 Skills Top 10：文件管理、网页搜索、日历同步
-- 🌟 **Skills双幻神**：find-skills（智能发现）+ ProactiveAgent（主动预测）
-- 🛠️ 自定义 Skills 开发：打造专属技能
+- 🌟 **Skills双幻神**：find-skills（智能发布现）+ ProactiveAgent（主动预测）
+- 🛠️ 自定义 Skills 开发布：打造专属技能
 - 📦 Skills 管理技巧：安装、更新、卸载
 - 🎯 **百度千帆Skills生态**：1715个企业级Skills，覆盖20+行业
 
-#### [第9章：多平台集成（飞书/企微/钉钉/QQ一键接入）](docs/03-advanced/09-multi-platform-integration.md)
+#### [第9章节：多平台集成（飞书/企微/钉钉/QQ一键接入）](docs/03-advanced/09-multi-platform-integration.md)
 > 团队协作必备，让OpenClaw接入你的工作平台
-- 🚀 飞书Bot：现代化办公、文档协作、流式输出
+- 🚀 飞书Bot：现代化怎么办公、文档协作、流式输出
 - 💼 企业微信Bot：团队协作、自动回复
-- 📱 钉钉Bot：办公自动化、审批提醒
+- 📱 钉钉Bot：怎么办公自动化、审批提醒
 - 💬 QQ Bot：个人助手、群管理
 - 🤖 **多机器人配置**：同时管理多个飞书机器人
 - 🎯 **多 Agent 配置**：不同机器人使用不同模型和工作空间
-- 🔧 **配置错误修复**：常见配置问题及解决方案
+- 🔧 **配置错误修复**：常见配置访问题及解决方案
 - 🖥️ **ClawX**：开源AI研究助手，24/7自主运行 + 20+平台通知推送
 - 📊 **ClawPanel**：OpenClaw可视化管理面板，Gateway/多Agent/模型配置一站搞定
 
-#### [第10章：API服务集成（绘图/Notion/视频/语音）](docs/03-advanced/10-api-integration.md)
+#### [第10章节：API服务集成（绘图/Notion/视频/语音）](docs/03-advanced/10-api-integration.md)
 > 接入第三方服务，让AI能力更强大
 - 🎨 AI绘图服务：Gemini图像生成集成
 - 📝 Notion数据同步：自动更新数据库
 - 🎬 视频生成服务：文字转视频
 - 🔊 语音合成接入：文字转语音
 
-#### [第11章：高级配置（多模型切换/成本优化/性能调优）](docs/03-advanced/11-advanced-configuration.md)
+#### [第11章节：高级配置（多模型切换/成本优化/性能调优）](docs/03-advanced/11-advanced-configuration.md)
 > 榨干OpenClaw性能，省钱又高效
 - 🎛️ Antigravity Manager：可视化配置管理
 - 🔄 多模型切换：不同任务用不同模型，省50%成本
@@ -547,18 +547,18 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ---
 
-### 🎯 第四部分：实战案例（4章）
+### 🎯 第四部分：实战案例（4章节）
 
-#### [第12章：5类人群的效率提升实战](docs/04-practical-cases/12-personal-productivity.md)
+#### [第12章节：5类人群的效率提升实战](docs/04-practical-cases/12-personal-productivity.md)
 > 真实案例，直接套用，立即提升效率
-- 👔 知识工作者：文档处理、会议记录、邮件管理（效率提升85%）
+- 👔 知识工作者：文档处理、会议记附录、邮件管理（效率提升85%）
 - 👨‍💻 程序员：代码审查、Bug追踪、文档生成（效率提升78%）
-- ✍️ 内容创作者：选题策划、素材整理、多平台发布（效率提升92%）
+- ✍️ 内内容创作者：选题策划、素材整理、多平台发布布（效率提升92%）
 - 🎓 学生：论文阅读、笔记整理、作业辅导
 - 🚀 **云上OpenClaw的5种正确打开方式**
 - 🌟 **Skills双幻神实战**：find-skills + ProactiveAgent 让OpenClaw更智能
 
-#### [第13章：高级自动化工作流（多Skills组合/知识图谱）](docs/04-practical-cases/13-advanced-automation.md)
+#### [第13章节：高级自动化工作流（多Skills组合/知识图谱）](docs/04-practical-cases/13-advanced-automation.md)
 > 进阶玩法，打造个人效率系统
 - 🔗 多Skills组合：网站监控+自动化推送+日报生成
 - 🧠 个人知识图谱：构建你的知识网络
@@ -566,19 +566,19 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - 💻 **Coding Agent工作流**：代码生成、Bug修复、代码审查（效率提升94.5%）
 - 💡 5个高级自动化案例（ROI 9000%-15900%）
 
-#### [第14章：创意应用探索（AI绘画/视频/翻译/数据分析）](docs/04-practical-cases/14-creative-applications.md)
+#### [第14章节：创意应用探索（AI绘画/视频/翻译/数据分析）](docs/04-practical-cases/14-creative-applications.md)
 > 解锁OpenClaw的创意玩法
 - 🎨 AI绘画工作流：Gemini图像生成实战（效率提升90.4%）
-- 🎬 视频脚本生成：自动化内容创作（效率提升92.6%）
+- 🎬 视频脚本生成：自动化内内容创作（效率提升92.6%）
 - 🌍 多语言翻译：实时翻译与批量处理（效率提升99.4%）
 - 📊 数据分析自动化：Excel/CSV自动处理（效率提升92.3%）
 - 🧠 **多Agent头脑风暴**：战略决策、创意生成（效率提升92.9%，ROI 109,900%）
 
-#### [第15章：超级个体实战案例（一人公司/自由职业）](docs/04-practical-cases/15-solo-entrepreneur-cases.md)
+#### [第15章节：超级个体实战案例（一人公司/自由职业）](docs/04-practical-cases/15-solo-entrepreneur-cases.md)
 > AI时代的超级个体，如何用OpenClaw实现一人顶一个团队
 - 🚀 一人公司运营：从0到1的完整工作流
 - 💼 自由职业者：项目管理、客户沟通、财务管理
-- 📈 个人品牌打造：内容创作、社交媒体、知识变现
+- 📈 个人品牌打造：内内容创作、社交媒体、知识变现
 - 💰 成本控制策略：月成本<1000元，效率提升10倍
 
 ---
@@ -590,38 +590,38 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 #### 基础附录（A-F）
 
-| 附录 | 内容 |
+| 附录 | 内内容 |
 |------|------|
 | [附录A：命令速查表](appendix/A-command-reference.md) | 100+ 常用命令，5 大类快速查找 |
 | [附录B：必装 Skills 清单](appendix/B-skills-catalog.md) | Top10 必装技能，附安装教程 |
-| [���录C：API 服务商对比](appendix/C-api-comparison.md) | 10+ 服务商价格对比，帮你省钱 |
+| [附录C：API 服务商对比](appendix/C-api-comparison.md) | 10+ 服务商价格对比，帮你省钱 |
 | [附录D：社区资源导航](appendix/D-community-resources.md) | 官方文档、视频教程、交流群 |
-| [附录E：常见问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能问题快速解决 |
+| [附录E：常见访问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能访问题快速解决 |
 | [附录E：配置文件模板](appendix/E-config-templates.md) | 开箱即用的配置示例 |
 | [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) | 新手必看，前人经验总结 |
 | [附录F：配套实操视频指南](appendix/F-video-tutorials.md) | 7个视频教程链接，包含部署、接入和高级配置 |
 
 #### 高级附录（G-N）
 
-| 附录 | 内容 |
+| 附录 | 内内容 |
 |------|------|
 | [附录G：文档链接验证](appendix/G-links-validation.md) | 所有链接状态检查 |
 | [附录H：配置文件模板和示例](appendix/H-config-templates.md) | 配置文件模板和示例 |
-| [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) | 各章节思考题详解 |
-| [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见问题 |
+| [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) | 各章节节思考题详解 |
+| [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见访问题 |
 | [附录K：API Key 配置完整指南](appendix/K-api-key-config-guide.md) | 多种API Key配置方式详解 |
 | [附录L：配置文件结构完整指南](appendix/L-config-file-structure.md) | 全局配置、Agent配置、认证配置详解 |
-| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜���功能使用技巧和常见问题 |
+| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜功能使用技巧和常见访问题 |
 | [附录N：Skills 生态说明](appendix/N-skills-ecosystem.md) | 内置49个、官方93个、社区1715+个Skills介绍 |
 
 
 ## 📊 项目数据
 
-### 内容统计
+### 内内容统计
 
 | 类别 | 数量 | 说明 |
 |------|------|------|
-| 正文章节 | 15章 | 约267,000字 |
+| 正文章节节 | 15章节 | 约267,000字 |
 | 基础附录 | 7个 | 约91,000字 |
 | 高级附录 | 8个 | 约50,000字 |
 | 配置示例 | 4个 | 开箱即用 |
@@ -634,7 +634,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### 最新更新（2026-02-14）
 
-| 类型 | 新增内容 | 字数/数量 | 亮点 |
+| 类型 | 新增内内容 | 字数/数量 | 亮点 |
 |------|---------|----------|------|
 | 附录A | 命令速查表 | 完整更新 | 常用命令快速查询 |
 | 附录B | 常用Skills清单 | 22,000字 | 15个进阶Skills详解 |
@@ -654,66 +654,66 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 | 附录H | 配置文件模板 | 20,000字 | 20+配置模板 |
 | 示例 | 配置+脚本+Skills | 16个文件 | 开箱即用 |
 
-👉 [查看详细改进内容](IMPROVEMENTS-SUMMARY.md)
+👉 [查看详细改进内内容](IMPROVEMENTS-SUMMARY.md)
 
 ### 优化进度
 
 | 优化项 | 状态 | 说明 |
 |--------|------|------|
-| 删除重复内容 | 🔄 进行中 | 已减少3,500字 |
+| 删除重复内内容 | 🔄 进行中 | 已减少3,500字 |
 | 统一代码格式 | 🔄 进行中 | 已优化20+处 |
-| 补充缺失章节 | 📅 计划中 | Week 2 |
-| 优化章节结构 | 📅 计划中 | Week 3 |
+| 补充缺失章节节 | 📅 计划中 | Week 2 |
+| 优化章节节结构 | 📅 计划中 | Week 3 |
 
 👉 [查看详细优化进度](OPTIMIZATION-PROGRESS.md)
 
 ### 效率提升数据
 
-| 场景 | 效率提升 | ROI | 章节 |
+| 场景 | 效率提升 | ROI | 章节节 |
 |------|---------|-----|------|
-| 文档处理 | 81.2% | - | 第4章 |
-| 硬盘清理 | 92.3% | - | 第4章 |
-| 知识工作者 | 85% | - | 第11章 |
-| 程序员 | 78% | - | 第11章 |
-| 内容创作者 | 92% | - | 第11章 |
-| 项目管理 | 88% | 15,900% | 第12章 |
-| 会议记录 | 90% | 9,000% | 第12章 |
-| **Coding Agent** | **94.5%** | - | **第12章（新增）** |
-| AI绘画 | 90.4% | - | 第13章 |
-| 视频脚本 | 92.6% | - | 第13章 |
-| 翻译 | 99.4% | - | 第13章 |
-| 数据分析 | 92.3% | - | 第13章 |
-| **多Agent头脑风暴** | **92.9%** | **109,900%** | **第13章（新增）** |
+| 文档处理 | 81.2% | - | 第4章节 |
+| 硬盘清理 | 92.3% | - | 第4章节 |
+| 知识工作者 | 85% | - | 第11章节 |
+| 程序员 | 78% | - | 第11章节 |
+| 内内容创作者 | 92% | - | 第11章节 |
+| 项目管理 | 88% | 15,900% | 第12章节 |
+| 会议记附录 | 90% | 9,000% | 第12章节 |
+| **Coding Agent** | **94.5%** | - | **第12章节（新增）** |
+| AI绘画 | 90.4% | - | 第13章节 |
+| 视频脚本 | 92.6% | - | 第13章节 |
+| 翻译 | 99.4% | - | 第13章节 |
+| 数据分析 | 92.3% | - | 第13章节 |
+| **多Agent头脑风暴** | **92.9%** | **109,900%** | **第13章节（新增）** |
 
 ### 成本优化数据
 
 - 使用国产模型节省成本：**95%**
 - 多模型组合节省成本：**50%**
-- 独享账号方案节省成本：**80%**（重度使用）
+- 独分享账号方案节省成本：**80%**（重度使用）
 - 百度千帆Skills：**企业级能力，开箱即用**（新增）
 
 ## 🎉 最新亮点（2026-02-12更新）
 
-### 1. 多 Agent 配置（第9章）
+### 1. 多 Agent 配置（第9章节）
 - ✅ 4个专业助手配置实战
 - ✅ 不同机器人使用不同模型
 - ✅ 独立工作空间隔离
 - ✅ 完整配置错误修复指南
 - ✅ 获取用户 ID 详细教程
 
-### 2. 百度千帆Skills生态（第8章）
+### 2. 百度千帆Skills生态（第8章节）
 - ✅ 1715个企业级Skills
 - ✅ 覆盖20+行业场景
 - ✅ 智能客服系统实战案例
 - ✅ 完整配置教程
 
-### 3. Coding Agent工作流（第12章）
+### 3. Coding Agent工作流（第12章节）
 - ✅ 自动化代码生成
 - ✅ 智能Bug修复
 - ✅ 代码审查优化
 - ✅ 效率提升94.5%
 
-### 4. 多Agent头脑风暴（第13章）
+### 4. 多Agent头脑风暴（第13章节）
 - ✅ 模拟多位专家讨论
 - ✅ 战略决策支持
 - ✅ 创意生成
@@ -741,7 +741,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### 📦 配置示例（开箱即用）
 
-在 `examples/` 目录下提供了完整的配置文件和脚本示例：
+在 `examples/` 目附录下提供了完整的配置文件和脚本示例：
 
 **配置文件**：
 - [基础配置](examples/configs/basic-config.json) - 新手入门最小配置
@@ -753,10 +753,10 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - [每日AI日报](examples/automation/daily-report.sh) - 自动生成并推送
 - [配置备份](examples/automation/backup-config.sh) - 定时备份配置
 - [批量文件处理](examples/automation/batch-process-files.sh) - 批量处理文件
-- [网站监控](examples/automation/website-monitor.sh) - 监控内容变化
+- [网站监控](examples/automation/website-monitor.sh) - 监控内内容变化
 
-**Skills开发**：
-- [自定义Skill模板](examples/skills/custom-skill-template.js) - 完整开发模板
+**Skills开发布**：
+- [自定义Skill模板](examples/skills/custom-skill-template.js) - 完整开发布模板
 - [天气查询示例](examples/skills/weather-skill-example.js) - 实用示例
 
 👉 [查看所有示例](examples/README.md)
@@ -765,29 +765,29 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### 多平台集成
 - [飞书双机器人配置：团队分离使用](docs/03-advanced/09-multi-platform-integration.md#实战案例配置双机器人)
-- [4个专业助手配置：主助理+内容+技术+资讯](docs/03-advanced/09-multi-platform-integration.md#9116-多-agent-配置高级)
+- [4个专业助手配置：主助理+内内容+技术+资讯](docs/03-advanced/09-multi-platform-integration.md#9116-多-agent-配置高级)
 - [配置错误修复：agents.list 配置限制](docs/03-advanced/09-multi-platform-integration.md#故障排查)
 
 ### 文件管理
-- [找发票：从1000张图片中找到跑步机发票](docs/02-core-features/04-file-management.md#场景1找文件)
-- [整理发票：自动填写报销单Excel](docs/02-core-features/04-file-management.md#场景2整理发票报销)
-- [批量重命名：根据内容自动命名文件](docs/02-core-features/04-file-management.md#场景3批量重命名文件)
+- [找发布票：从1000张图片中找到跑步机发布票](docs/02-core-features/04-file-management.md#场景1找文件)
+- [整理发布票：自动填写报销单Excel](docs/02-core-features/04-file-management.md#场景2整理发布票报销)
+- [批量重命名：根据内内容自动命名文件](docs/02-core-features/04-file-management.md#场景3批量重命名文件)
 
 ### 知识管理
-- [网页存档：一键保存技术文章到备忘录](docs/02-core-features/05-knowledge-management.md#核心原理)
+- [网页存档：一键保存技术文章节到备忘附录](docs/02-core-features/05-knowledge-management.md#核心原理)
 - [论文阅读：自动总结PDF论文](docs/02-core-features/05-knowledge-management.md#实际使用)
 
 ### 日程管理
 - [微信截图识别：自动创建日历事件](docs/02-core-features/06-schedule-management.md#微信截图识别)
 
 ### 自动化
-- [网站监控：Claude 5发布立即通知](docs/02-core-features/07-automation-workflow.md#场景3网站监控)
+- [网站监控：Claude 5发布布立即通知](docs/02-core-features/07-automation-workflow.md#场景3网站监控)
 - [AI日报：每天9点推送行业资讯](docs/02-core-features/07-automation-workflow.md#场景2定时推送日报)
 
 ## 🌟 特色功能
 
 ### 1. 本地文件管理神器
-- 智能搜索：根据内容找文件
+- 智能搜索：根据内内容找文件
 - 批量处理：一次处理100+文件
 - 自动整理：智能分类和重命名
 
@@ -803,13 +803,13 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### 4. 自动化工作流
 - 定时任务：每天自动执行
-- 网站监控：内容更新立即通知
+- 网站监控：内内容更新立即通知
 - 日报推送：聚合多个信息源
 
 ### 5. 多平台集成
-- 飞书：现代化办公、流式输出
+- 飞书：现代化怎么办公、流式输出
 - 企业微信：团队协作
-- 钉钉：办公自动化
+- 钉钉：怎么办公自动化
 - QQ：个人助手
 - 多机器人配置：同时管理多个机器人
 - 多 Agent 配置：不同机器人使用不同模型
@@ -853,7 +853,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ## 👥 交流群
 
-欢迎加入OpenClaw交流群，与更多开发者一起交流学习！备注：小龙虾
+欢迎加入OpenClaw交流群，与更多开发布者一起交流学习！备注：小龙虾
 
 <div align="center">
   <img src="https://upload.maynor1024.live/file/1772695436136_20260305152343578.jpg" alt="OpenClaw交流群二维码" width="300">
@@ -864,19 +864,19 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 如果这个教程对你有帮助，请：
 - ⭐ 给项目点个Star
-- 🔄 分享给更多需要的人
-- 💬 提交Issue反馈问题
+- 🔄 分分享给更多需要的人
+- 💬 提交Issue反馈访问题
 - 🤝 贡献你的经验和案例
 
 ## 📈 项目进度
 
 - ✅ **v1.0**（2026-02-10）：全书完成，251,000字
 - ✅ **v1.0.1**（2026-02-10）：更新为OpenClaw最新版本，补充50+配置截图
-- ✅ **v1.1**（2026-02-11）：新增15,500字，补充3个核心章节
-  - 第8章：百度千帆Skills生态（5,000字）
-  - 第12章：Coding Agent工作流（4,500字）
-  - 第13章：多Agent头脑风暴（6,000字）
-- 🔄 **v1.2**（进行中）：优化内容质量，删除重复，统一格式
+- ✅ **v1.1**（2026-02-11）：新增15,500字，补充3个核心章节节
+  - 第8章节：百度千帆Skills生态（5,000字）
+  - 第12章节：Coding Agent工作流（4,500字）
+  - 第13章节：多Agent头脑风暴（6,000字）
+- 🔄 **v1.2**（进行中）：优化内内容质量，删除重复，统一格式
 - 📝 **v1.3**（计划中）：补充更多实战案例
 - 📝 **v2.0**（计划中）：跟随OpenClaw版本更新
 
@@ -909,7 +909,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - **OpenClaw文档**：https://docs.openclaw.ai
 - **Awesome Skills**：https://github.com/VoltAgent/awesome-openclaw-skills
 - **Clawbot项目**：https://github.com/xianyu110/clawbot（700+ Stars，历史参考）
-- **sanwan.ai 实战案例**：https://sanwan.ai — AI 龙虾三万独立运营31天实录，展示 OpenClaw 长期自主运营的完整技能体系（心跳机制/多Agent/SOUL.md等）
+- **sanwan.ai 实战案例**：https://sanwan.ai — AI 龙虾三万独立运营31天实附录，展示 OpenClaw 长期自主运营的完整技能体系（心跳机制/多Agent/SOUL.md等）
 
 ## 📄 许可证
 
@@ -917,15 +917,15 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### ⚠️ 重要声明：禁止倒卖
 
-本项目是开源教程，遵循GPL-3.0许可证，任何人都可以自由使用、学习和分享。但是：
+本项目是开源教程，遵循GPL-3.0许可证，任何人都可以自由使用、学习和分分享。但是：
 
 - ❌ **严禁倒卖**：禁止将本教程打包后进行商业售卖
 - ❌ **严禁闭源商用**：任何基于本项目的衍生作品必须同样开源
 - ✅ **允许学习**：欢迎个人学习和使用
-- ✅ **允许分享**：欢迎分享给更多需要的人
-- ✅ **允许修改**：可以修改并分享，但必须保持开源
+- ✅ **允许分分享**：欢迎分分享给更多需要的人
+- ✅ **允许修改**：可以修改并分分享，但必须保支持开源
 
-如果你发现有人倒卖本教程，请通过以下方式举报：
+如果你发布现有人倒卖本教程，请通过以下方式举报：
 - 提交 [GitHub Issue](https://github.com/xianyu110/awesome-openclaw-tutorial/issues)
 - 联系作者：[@xianyu110](https://github.com/xianyu110)
 
@@ -939,26 +939,26 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 ---
 
 **最后更新**：2026年3月13日
-**教程版本**：v1.6（持续更新）
+**教程版本**：v1.6（支持续更新）
 **书名**：一本书玩转OpenClaw：超级个体实战指南
 **副标题**：从零开始打造你的AI工作助手
 **总字数**：408,000字（正文267,000字 + 附录141,000字）
-**章节数**：15章正文 + 15个附录
+**章节节数**：15章节正文 + 15个附录
 **适用OpenClaw版本**：2026.3.12（推荐最新版）
 
 **本次更新亮点**：
 - ✅ 新增附录F：配套实操视频指南（7个视频教程链接）
-- ✅ 更新所有附录内容（附录A-N完整更��）
-- ✅ Skills生态大爆发：从1800+到492,000+
+- ✅ 更新所有附录内内容（附录A-N完整更）
+- ✅ Skills生态大爆发布：从1800+到492,000+
 - ✅ 更新统计数据和版本信息（v2026.3.12）
 - ✅ 教程总字数达40.8万字
 
-👉 [查看详细改进内容](IMPROVEMENTS-SUMMARY.md)
+👉 [查看详细改进内内容](IMPROVEMENTS-SUMMARY.md)
 
 ---
 
 <div align="center">
-  <p>🎉 教程已完成 | 持续优化 | 完全免费 🎉</p>
+  <p>🎉 教程已完成 | 支持续优化 | 完全免费 🎉</p>
   <p>🚀 一个人 + OpenClaw = 无限可能 🚀</p>
   <p>⭐ 如果觉得有用，请给个Star支持一下 ⭐</p>
   <p><a href="PROJECT-SUMMARY.md">查看完整项目总结</a> | <a href="PROGRESS.md">查看详细进度</a> | <a href="OPTIMIZATION-PROGRESS.md">查看优化进度</a></p>

@@ -21,7 +21,7 @@ title: 首页
 
 ## 📖 新书预告：《OpenClaw超级个体实操手册》
 
-⚠️ **本教程早期内容存在AI生成未验证的问题**（[#34](https://github.com/xianyu110/awesome-openclaw-tutorial/issues/34)），正在分批修正中。
+⚠️ **本教程早期内内容存在AI生成未验证的访问题**（[#34](https://github.com/xianyu110/awesome-openclaw-tutorial/issues/34)），正在分批修正中。
 
 纸质书在此基础上做了**全面重写+逐条验证**：
 - 🔍 144条CLI命令对照官方文档逐条核对（教程中约60%已删除或修正）
@@ -38,16 +38,16 @@ title: 首页
 根据你的情况选择路径：
 
 **有 Mac 电脑**：
-1. [第1章：认识 OpenClaw](docs/01-basics/01-introduction.md) — 了解它能做什么
-2. [第2章：Mac 本地部署](docs/01-basics/02-installation.md#mac本地部署推荐) — 一行命令安装
-3. [第9章：接入飞书](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置) — 手机随时对话
-4. [第3章：快速上手](docs/01-basics/03-quick-start.md) — 发送第一条消息
+1. [第1章节：认识 OpenClaw](docs/01-basics/01-introduction.md) — 了解它能做什么
+2. [第2章节：Mac 本地部署](docs/01-basics/02-installation.md#mac本地部署推荐) — 一行命令安装
+3. [第9章节：接入飞书](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置) — 手机随时对话
+4. [第3章节：快速上手](docs/01-basics/03-quick-start.md) — 发布送第一条消息
 
 **没有 Mac / 想 24 小时运行**：
-1. [第1章：认识 OpenClaw](docs/01-basics/01-introduction.md) — 了解它能做什么
-2. [第2章：云端部署](docs/01-basics/02-installation.md#云端一键部署) — 5 分钟完成
-3. [第9章：接入飞书](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置) — 手机随时对话
-4. [第3章：快速上手](docs/01-basics/03-quick-start.md) — 发送第一条消息
+1. [第1章节：认识 OpenClaw](docs/01-basics/01-introduction.md) — 了解它能做什么
+2. [第2章节：云端部署](docs/01-basics/02-installation.md#云端一键部署) — 5 分钟完成
+3. [第9章节：接入飞书](docs/03-advanced/09-multi-platform-integration.md#91-飞书bot配置) — 手机随时对话
+4. [第3章节：快速上手](docs/01-basics/03-quick-start.md) — 发布送第一条消息
 
 ---
 
@@ -55,11 +55,11 @@ title: 首页
 
 ### 🎉 2026.3.12 版本：重大功能更新
 
-**OpenClaw 2026.3.12 已发布！**（2026年3月13日）
+**OpenClaw 2026.3.12 已发布布！**（2026年3月13日）
 
 #### 🎛️ Control UI 全面升级（Dashboard v2）
 - **模块化视图设计**：全新的概览、聊天、配置、Agent 和会话视图
-- **命令面板**：快速访问所有功能的命令面板（Command Palette）
+- **命令面板**：快速访访问所有功能的命令面板（Command Palette）
 - **移动端优化**：新增底部标签栏，移动端体验大幅提升
 - **增强聊天工具**：斜杠命令、搜索、导出、置顶消息功能
 
@@ -75,15 +75,15 @@ title: 首页
 #### 🔒 安全增强（重要！）
 - **设备配对安全**：`/pair` 和 `openclaw qr` 使用短期引导令牌
 - **插件信任机制**：禁用隐式工作区插件自动加载，需要明确信任决定
-- **命令权限控制**：`/config` 和 `/debug` 要求发送者所有权
-- **网关认证强化**：清除共享令牌 WebSocket 连接的未绑定客户端声明
+- **命令权限控制**：`/config` 和 `/debug` 要求发布送者所有权
+- **网关认证强化**：清除共分享令牌 WebSocket 连接的未绑定客户端声明
 
 **升级命令**：
 ```bash
 openclaw update && openclaw gateway restart
 ```
 
-👉 [查看完整发布说明](https://github.com/openclaw/openclaw/releases)
+👉 [查看完整发布布说明](https://github.com/openclaw/openclaw/releases)
 
 ---
 
@@ -123,15 +123,15 @@ openclaw gateway restart
 
 ### 🔧 2026.3.2 版本：AI变"哑巴"了？
 
-**问题现象**：升级到 2026.3.2 后，OpenClaw只能聊天不能干活（文件管理、命令执行等工具功能全部失效）
+**访问题现象**：升级到 2026.3.2 后，OpenClaw只能聊天不能干活（文件管理、命令执行等工具功能全部失效）
 
-**问题原因**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式）
+**访问题原因**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式）
 
 **5种 profile 说明**：
 
 | Profile | 功能说明 |
 |---------|---------|
-| `messaging` | 只能发消息、管理会话（光聊天不干活） |
+| `messaging` | 只能发布消息、管理会话（光聊天不干活） |
 | `default` | 默认工具集（不含命令执行） |
 | `coding` | 编程相关工具 |
 | `full` | 完整工具集，包含命令执行（**推荐**） |
@@ -158,7 +158,7 @@ openclaw gateway restart
 
 适用于：不方便使用编程工具的环境（手机版等）
 
-1. 访问 `http://127.0.0.1:18789`（或你的服务器IP）
+1. 访访问 `http://127.0.0.1:18789`（或你的服务器IP）
 2. 点击左侧「配置」
 3. 切换到 **Raw** 格式
 4. 找到 `tools` 配置项
@@ -182,9 +182,9 @@ openclaw gateway restart
 
 > 💡 **重要前提**：OpenClaw 预装了 **49 个内置技能（Skills）**，开箱即用，无需额外安装即可完成本教程大部分演示。
 
-| 内容 | 数量 |
+| 内内容 | 数量 |
 |------|------|
-| 正文章节 | 15 章，约 267,000 字 |
+| 正文章节节 | 15 章节，约 267,000 字 |
 | 基础附录 | 7 个（A-F+F视频），约 91,000 字 |
 | 高级附录 | 8 个（G-N），约 50,000 字 |
 | 实战案例 | 70+ 个，可直接复用 |
@@ -193,54 +193,54 @@ openclaw gateway restart
 
 ---
 
-## 📚 教程目录
+## 📚 教程目附录
 
 ### 第一部分：零基础入门
 
-| 章节 | 核心内容 |
+| 章节节 | 核心内内容 |
 |------|---------|
-| [第1章：认识 OpenClaw](docs/01-basics/01-introduction.md) | OpenClaw 是什么、能做什么、和 ChatGPT 的区别 |
-| [第2章：环境搭建](docs/01-basics/02-installation.md) | Mac/Windows/Linux 本地部署、云端一键部署、Docker 部署 |
-| [第3章：快速上手](docs/01-basics/03-quick-start.md) | 第一次对话、10 个常用命令、人设配置、模型选择 |
+| [第1章节：认识 OpenClaw](docs/01-basics/01-introduction.md) | OpenClaw 是什么、能做什么、和 ChatGPT 的区别 |
+| [第2章节：环境搭建](docs/01-basics/02-installation.md) | Mac/Windows/Linux 本地部署、云端一键部署、Docker 部署 |
+| [第3章节：快速上手](docs/01-basics/03-quick-start.md) | 第一次对话、10 个常用命令、人设配置、模型选择 |
 
 ### 第二部分：4 大核心功能
 
-| 章节 | 核心内容 |
+| 章节节 | 核心内内容 |
 |------|---------|
-| [第4章：本地文件管理](docs/02-core-features/04-file-management.md) | 智能搜索、批量处理、自动整理、硬盘清理 |
-| [第5章：个人知识库](docs/02-core-features/05-knowledge-management.md) | 网页剪藏、PDF 解析、GitHub 追踪、跨设备同步 |
-| [第6章：日程管理](docs/02-core-features/06-schedule-management.md) | 截图识别、日历创建、批量导入、智能提醒 |
-| [第7章：自动化工作流](docs/02-core-features/07-automation-workflow.md) | 定时任务、网站监控、AI 日报、循环任务 |
+| [第4章节：本地文件管理](docs/02-core-features/04-file-management.md) | 智能搜索、批量处理、自动整理、硬盘清理 |
+| [第5章节：个人知识库](docs/02-core-features/05-knowledge-management.md) | 网页剪藏、PDF 解析、GitHub 追踪、跨设备同步 |
+| [第6章节：日程管理](docs/02-core-features/06-schedule-management.md) | 截图识别、日历创建、批量导入、智能提醒 |
+| [第7章节：自动化工作流](docs/02-core-features/07-automation-workflow.md) | 定时任务、网站监控、AI 日报、循环任务 |
 
 ### 第三部分：进阶技能
 
-| 章节 | 核心内容 |
+| 章节节 | 核心内内容 |
 |------|---------|
-| [第8章：Skills 扩展](docs/03-advanced/08-skills-extension.md) | ClawHub 市场、必装 Top10、Skills 双幻神、自定义开发 |
-| [第9章：多平台集成](docs/03-advanced/09-multi-platform-integration.md) | 飞书、企微、钉钉、QQ 接入；多机器人、多 Agent 配置 |
-| [第10章：API 服务集成](docs/03-advanced/10-api-integration.md) | AI 绘图、Notion 同步、视频生成、语音合成 |
-| [第11章：高级配置](docs/03-advanced/11-advanced-configuration.md) | 多模型切换、成本优化、性能调优 |
+| [第8章节：Skills 扩展](docs/03-advanced/08-skills-extension.md) | ClawHub 市场、必装 Top10、Skills 双幻神、自定义开发布 |
+| [第9章节：多平台集成](docs/03-advanced/09-multi-platform-integration.md) | 飞书、企微、钉钉、QQ 接入；多机器人、多 Agent 配置 |
+| [第10章节：API 服务集成](docs/03-advanced/10-api-integration.md) | AI 绘图、Notion 同步、视频生成、语音合成 |
+| [第11章节：高级配置](docs/03-advanced/11-advanced-configuration.md) | 多模型切换、成本优化、性能调优 |
 
 ### 第四部分：实战案例
 
-| 章节 | 核心内容 |
+| 章节节 | 核心内内容 |
 |------|---------|
-| [第12章：5 类人群效率提升](docs/04-practical-cases/12-personal-productivity.md) | 知识工作者、程序员、创作者、学生、超级个体实战 |
-| [第13章：高级自动化工作流](docs/04-practical-cases/13-advanced-automation.md) | 多 Skills 组合、知识图谱、Coding Agent、多 Agent 头脑风暴 |
-| [第14章：创意应用探索](docs/04-practical-cases/14-creative-applications.md) | AI 绘画、视频脚本、多语言翻译、数据分析 |
-| [第15章：超级个体实战](docs/04-practical-cases/15-solo-entrepreneur-cases.md) | 一人公司运营、自由职业、个人品牌、成本控制 |
+| [第12章节：5 类人群效率提升](docs/04-practical-cases/12-personal-productivity.md) | 知识工作者、程序员、创作者、学生、超级个体实战 |
+| [第13章节：高级自动化工作流](docs/04-practical-cases/13-advanced-automation.md) | 多 Skills 组合、知识图谱、Coding Agent、多 Agent 头脑风暴 |
+| [第14章节：创意应用探索](docs/04-practical-cases/14-creative-applications.md) | AI 绘画、视频脚本、多语言翻译、数据分析 |
+| [第15章节：超级个体实战](docs/04-practical-cases/15-solo-entrepreneur-cases.md) | 一人公司运营、自由职业、个人品牌、成本控制 |
 
 ### 附录：速查手册
 
 #### 基础附录（A-F）
 
-| 附录 | 内容 |
+| 附录 | 内内容 |
 |------|------|
 | [附录A：命令速查表](appendix/A-command-reference.md) | 100+ 常用命令，5 大类快速查找 |
 | [附录B：必装 Skills 清单](appendix/B-skills-catalog.md) | Top10 必装技能，附安装教程 |
 | [附录C：API 服务商对比](appendix/C-api-comparison.md) | 10+ 服务商价格对比，帮你省钱 |
 | [附录D：社区资源导航](appendix/D-community-resources.md) | 官方文档、视频教程、交流群 |
-| [附录E：常见问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能问题解决 |
+| [附录E：常见访问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能访问题解决 |
 | [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) | 新手必看，前人经验总结 |
 
 #### 视频教程附录（F）
@@ -248,15 +248,15 @@ openclaw gateway restart
 
 #### 高级附录（G-N）
 
-| 附录 | 内容 |
+| 附录 | 内内容 |
 |------|------|
 | [附录G：文档链接验证](appendix/G-links-validation.md) | 所有链接状态检查 |
 | [附录H：配置文件模板](appendix/H-config-templates.md) | 开箱即用的配置示例 |
-| [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) | 各章节思考题详解 |
-| [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见问题 |
+| [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) | 各章节节思考题详解 |
+| [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见访问题 |
 | [附录K：API Key 配置完整指南](appendix/K-api-key-config-guide.md) | 多种API Key配置方式详解 |
 | [附录L：配置文件结构完整指南](appendix/L-config-file-structure.md) | 全局配置、Agent配置、认证配置详解 |
-| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜索功能使用��巧和常见问题 |
+| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜索功能使用技巧和常见访问题 |
 | [附录N：Skills 生态说明](appendix/N-skills-ecosystem.md) | 内置49个、官方93个、社区1715+个Skills介绍 |
 
 ---
@@ -302,7 +302,7 @@ openclaw gateway restart
 
 ## 👥 交流群
 
-欢迎加入OpenClaw交流群，与更多开发者一起交流学习！备注：小龙虾
+欢迎加入OpenClaw交流群，与更多开发布者一起交流学习！备注：小龙虾
 
 <div align="center">
   <img src="https://upload.maynor1024.live/file/1772695436136_20260305152343578.jpg" alt="OpenClaw交流群二维码" width="300">
@@ -315,19 +315,19 @@ openclaw gateway restart
 
 如果这个教程对你有帮助：
 - ⭐ 给项目点个 Star
-- 🔄 分享给需要的人
-- 💬 提交 Issue 反馈问题
+- 🔄 分分享给需要的人
+- 💬 提交 Issue 反馈访问题
 - 🤝 贡献你的经验和案例
 
 ---
 
 <div align="center">
-  <p>🎉 完全免费 | 持续更新 | 社区驱动 🎉</p>
+  <p>🎉 完全免费 | 支持续更新 | 社区驱动 🎉</p>
   <p>🚀 一个人 + OpenClaw = 无限可能 🚀</p>
 </div>
 
 **最后更新**：2026年3月17日
 **教程版本**：v1.6
 **总字数**：408,000字（正文267,000字 + 附录141,000字）
-**章节数**：15章正文 + 15个附录
+**章节节数**：15章节正文 + 15个附录
 **适用 OpenClaw 版本**：2026.3.12（推荐最新版）

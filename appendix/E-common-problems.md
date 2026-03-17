@@ -1,21 +1,21 @@
-# 附录E：常见问题速查
+# 附录E：常见访问题速查
 
-> 💡 **快速定位问题**：本附录汇总了OpenClaw使用过程中最常见的各类问题及解决方案，帮助你快速排查和解决问题。
+> 💡 **快速定位访问题**：本附录汇总了OpenClaw使用过程中最常见的各类访问题及解决方案，帮助你快速排查和解决访问题。
 
-## 📋 目录
+## 📋 目附录
 
-- [安装配置问题](#安装配置问题)
-- [API连接问题](#api连接问题)
-- [Gateway问题](#gateway问题)
-- [Skills问题](#skills问题)
-- [平台集成问题](#平台集成问题)
-- [性能问题](#性能问题)
+- [安装配置访问题](#安装配置访问题)
+- [API连接访问题](#api连接访问题)
+- [Gateway访问题](#gateway访问题)
+- [Skills访问题](#skills访问题)
+- [平台集成访问题](#平台集成访问题)
+- [性能访问题](#性能访问题)
 
 ---
 
-## 安装配置问题
+## 安装配置访问题
 
-### Q1: 安装失败怎么办？
+### Q1: 安装失败怎么怎么办？
 
 **症状**：执行安装命令时报错
 
@@ -39,7 +39,7 @@ npm install -g openclaw
 4. **检查网络连接**
 - 如果在国内，建议使用镜像源或中转API
 
-### Q2: 权限错误怎么办？
+### Q2: 权限错误怎么怎么办？
 
 **症状**：安装或运行时提示权限不足
 
@@ -55,7 +55,7 @@ nvm use node
 npm install -g openclaw
 ```
 
-### Q3: 网络超时怎么办？
+### Q3: 网络超时怎么怎么办？
 
 **症状**：安装或更新时网络连接超时
 
@@ -80,9 +80,9 @@ npm install -g ./openclaw-*.tgz
 
 ---
 
-## API连接问题
+## API连接访问题
 
-### Q4: API连接失败怎么办？
+### Q4: API连接失败怎么怎么办？
 
 **症状**：提示API连接错误或超时
 
@@ -107,7 +107,7 @@ ping api.anthropic.com
 4. **使用中转API（国内推荐）**
 - 参考附录C：API服务商对比
 
-### Q5: API费用太高怎么办？
+### Q5: API费用太高怎么怎么办？
 
 **症状**：API使用成本超出预算
 
@@ -145,9 +145,9 @@ openclaw config set tools.profile "coding"  # 限制工具使用
 
 ---
 
-## Gateway问题
+## Gateway访问题
 
-### Q6: Gateway启动失败怎么办？
+### Q6: Gateway启动失败怎么怎么办？
 
 **症状**：执行`openclaw daemon start`后Gateway无法启动
 
@@ -155,7 +155,7 @@ openclaw config set tools.profile "coding"  # 限制工具使用
 
 1. **检查配置文件**
 ```bash
-openclaw doctor  # 诊断配置问题
+openclaw doctor  # 诊断配置访问题
 ```
 
 2. **检查端口占用**
@@ -190,7 +190,7 @@ openclaw config set gateway.auth.token "$(openssl rand -hex 32)"
 openclaw daemon restart
 ```
 
-### Q8: 端口被占用怎��办？
+### Q8: 端口被占用怎么办？
 
 **症状**：提示18789端口已被占用
 
@@ -209,9 +209,9 @@ lsof -ti :18789 | xargs kill -9
 
 ---
 
-## Skills问题
+## Skills访问题
 
-### Q9: Skills安装失败怎么办？
+### Q9: Skills安装失败怎么怎么办？
 
 **症状**：`clawhub install`命令执行失败
 
@@ -236,11 +236,11 @@ git clone https://github.com/user/skill-repo.git
 cd skill-repo
 npm install
 
-# 复制到Skills目录
+# 复制到Skills目附录
 cp -r . ~/.openclaw/skills/skill-name
 ```
 
-### Q10: Skills不生效怎么办？
+### Q10: Skills不生效怎么怎么办？
 
 **症状**：安装Skill后功能无法使用
 
@@ -281,7 +281,7 @@ rm -rf ~/.openclaw/skills/skill-name
 openclaw daemon restart
 ```
 
-### Q12: Skills冲突怎么办？
+### Q12: Skills冲突怎么怎么办？
 
 **症状**：多个Skills功能冲突
 
@@ -308,11 +308,11 @@ clawhub install skill-name@version
 
 ---
 
-## 平台集成问题
+## 平台集成访问题
 
-### Q13: 飞书Bot不回复怎么办？
+### Q13: 飞书Bot不回复怎么怎么办？
 
-**症状**：给飞书Bot发送消息无响应
+**症状**：给飞书Bot发布送消息无响应
 
 **解决方案**：
 
@@ -344,8 +344,8 @@ curl -X POST https://open.feishu.cn/open-apis/bot/v2/hook/xxx \
 
 1. **检查应用Secret**
 2. **验证回调URL**
-3. **检查通讯录权限**
-4. **参考第9章配置步骤**
+3. **检查通讯附录权限**
+4. **参考第9章节配置步骤**
 
 ### Q15: Telegram Bot无响应？
 
@@ -358,7 +358,7 @@ curl -X POST https://open.feishu.cn/open-apis/bot/v2/hook/xxx \
 openclaw config get channels.telegram.botToken
 ```
 
-2. **与Bot发起对话**
+2. **与Bot发布起对话**
 ```bash
 curl https://api.telegram.org/bot<TOKEN>/getMe
 ```
@@ -370,9 +370,9 @@ curl https://api.telegram.org/bot<TOKEN>/getWebhookInfo
 
 ---
 
-## 性能问题
+## 性能访问题
 
-### Q16: 响应速度慢怎么办？
+### Q16: 响应速度慢怎么怎么办？
 
 **解决方案**：
 
@@ -419,7 +419,7 @@ docker run -d --memory="2g" openclaw/openclaw
 
 **解决方案**：
 
-1. **清理日志文���**
+1. **清理日志文件**
 ```bash
 rm -rf ~/.openclaw/logs/*.log
 ```
@@ -438,10 +438,10 @@ openclaw session prune --days 30
 
 ## 🔍 更多资源
 
-- [第2章：安装部署](../docs/01-basics/02-installation.md) - 完整安装指南
-- [第8章：Skills扩展](../docs/03-advanced/08-skills-extension.md) - Skills使用管理
-- [第9章：多平台集成](../docs/03-advanced/09-multi-platform-integration.md) - 平台接入配置
-- [第11章：高级配置](../docs/03-advanced/11-advanced-configuration.md) - 性能优化
+- [第2章节：安装部署](../docs/01-basics/02-installation.md) - 完整安装指南
+- [第8章节：Skills扩展](../docs/03-advanced/08-skills-extension.md) - Skills使用管理
+- [第9章节：多平台集成](../docs/03-advanced/09-multi-platform-integration.md) - 平台接入配置
+- [第11章节：高级配置](../docs/03-advanced/11-advanced-configuration.md) - 性能优化
 
 ---
 

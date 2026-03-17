@@ -1,8 +1,8 @@
-# 第11章 高级配置（多模型切换/成本优化/性能调优）
+# 第11章节 高级配置（多模型切换/成本优化/性能调优）
 
-> 💡 **本章目标**：掌握OpenClaw的高级配置技巧，包括Antigravity Manager配置、多模型切换、成本优化和性能调优。
+> 💡 **本章节目标**：掌握OpenClaw的高级配置技巧，包括Antigravity Manager配置、多模型切换、成本优化和性能调优。
 
-## ⚙️ 本章内容
+## ⚙️ 本章节内内容
 
 - 11.1 Antigravity Manager完全配置指南
 - 11.2 多模型切换策略
@@ -46,7 +46,7 @@ Antigravity Manager是1个AI API代理工具，可以让你通过本地服务访
 
 **需要准备的东西**：
 1. Antigravity Manager安装包
-2. AI模型的API Key（或独享账号）
+2. AI模型的API Key（或独分享账号）
 3. 基本的命令行操作能力
 
 ### 11.1.3 安装Antigravity Manager
@@ -105,14 +105,14 @@ Antigravity Manager需要你提供AI模型的API 密钥才能工作。
 3. 创建API Key
 4. 复制保存
 
-#### 方案2：购买独享账号（推荐）
+#### 方案2：购买独分享账号（推荐）
 
-如果你不想自己申请API，可以购买独享账号：
+如果你不想自己申请API，可以购买独分享账号：
 
-**推荐**：学生账号Gemini 3 Pro独享账号12个月（支持反重力）
+**推荐**：学生账号Gemini 3 Pro独分享账号12个月（支持反重力）
 
 **优势：**
-- ✅ 独享账号，无需担心限流
+- ✅ 独分享账号，无需担心限流
 - ✅ 支持Antigravity Manager
 - ✅ 12个月有效期
 - ✅ 性价比高
@@ -173,7 +173,7 @@ openclaw config set agents.defaults.model.primary "local-anthropic/claude-sonnet
 
 #### 配置Claude Opus 4.5 Thinking（推理模型）
 
-这是Claude的推理模型，适合复杂问题和深度思考。
+这是Claude的推理模型，适合复杂访问题和深度思考。
 
 ```bash
 cat ~/.openclaw/openclaw.json | jq '.models.providers["local-anthropic-opus"] = {
@@ -258,14 +258,14 @@ openclaw message send "你好，介绍一下你自己"
 
 #### 使用默认模型（Claude Sonnet 4.5）
 
-直接发送消息即可：
+直接发布送消息即可：
 
 ```bash
 openclaw message send "写1个Python脚本，打印Hello World"
 ```text
 #### 切换到Opus Thinking模型
 
-适合需要深度思考的复杂问题：
+适合需要深度思考的复杂访问题：
 
 ```bash
 openclaw config set agents.defaults.model.primary "local-anthropic-opus/claude-opus-4-5-thinking"
@@ -298,7 +298,7 @@ openclaw agent --model "local-google/gemini-3-pro-image" --message "分析这张
 - 日常对话
 - 代码生成
 - 文档编写
-- 快速问答
+- 快速访问答
 
 **特点：**
 - 速度快
@@ -310,14 +310,14 @@ openclaw agent --model "local-google/gemini-3-pro-image" --message "分析这张
 
 **适用场景：**
 - 复杂推理
-- 数学问题
+- 数学访问题
 - 算法优化
 - 深度分析
 
 **特点：**
 - 推理能力强
 - 思考过程可见
-- 适合复杂问题
+- 适合复杂访问题
 - 上下文窗口：200k tokens
 
 #### Gemini 3 Pro Image
@@ -399,7 +399,7 @@ openclaw gateway restart
 # 查看配置文件
 cat ~/.openclaw/openclaw.json | jq '.models.providers'
 
-# 发送消息
+# 发布送消息
 openclaw message send "你的消息"
 
 # 临时使用特定模型
@@ -414,7 +414,7 @@ local-google/gemini-3-pro-image
 ```text
 ### 11.1.13 故障排查
 
-#### 问题1：模型列表为空
+#### 访问题1：模型列表为空
 
 **原因**：配置文件格式错误或路径不对
 
@@ -426,7 +426,7 @@ cat ~/.openclaw/openclaw.json | jq '.models.providers'
 # 如果返回错误，恢复备份
 cp ~/.openclaw/openclaw.json.backup ~/.openclaw/openclaw.json
 ```text
-#### 问题2：API连接失败
+#### 访问题2：API连接失败
 
 **原因**：Antigravity Manager未启动或端口被占用
 
@@ -440,7 +440,7 @@ lsof -i :8045
 
 # 重启Antigravity Manager
 ```text
-#### 问题3：配置后模型不生效
+#### 访问题3：配置后模型不生效
 
 **原因**：忘记重启Gateway
 
@@ -448,7 +448,7 @@ lsof -i :8045
 ```bash
 openclaw gateway restart
 ```text
-#### 问题4：User Token无效
+#### 访问题4：User Token无效
 
 **原因**：Token过期或输入错误
 
@@ -539,11 +539,11 @@ OpenClaw（Claude Sonnet）：你好！我是Claude...
 - 价格便宜
 - 中文友好
 ```text
-### 11.2.3 模型容灾机制（Fallback）
+### 11.2.3 模型内容灾机制（Fallback）
 
 > 🛡️ **高可用保障**：通过配置主模型和备用模型，确保服务不中断。
 
-#### 什么是模型容灾？
+#### 什么是模型内容灾？
 
 当主模型（primary）出现以下情况时，系统会自动切换到备用模型（fallbacks）：
 - API 调用失败
@@ -551,9 +551,9 @@ OpenClaw（Claude Sonnet）：你好！我是Claude...
 - 速率限制（Rate Limit）
 - 服务不可用
 
-![服务容灾配置示例](https://upload.maynor1024.live/file/1771085328347_service-disaster-recovery.png)
+![服务内容灾配置示例](https://upload.maynor1024.live/file/1771085328347_service-disaster-recovery.png)
 
-#### 基础容灾配置
+#### 基础内容灾配置
 
 **配置文件路径**：`~/.openclaw/openclaw.json`
 
@@ -595,7 +595,7 @@ OpenClaw（Claude Sonnet）：你好！我是Claude...
    ↓ 失败
 4. 返回错误信息
 ```text
-#### 实战案例1：成本优化型容灾
+#### 实战案例1：成本优化型内容灾
 
 **场景**：优先使用便宜模型，失败后使用高质量模型
 
@@ -620,7 +620,7 @@ OpenClaw（Claude Sonnet）：你好！我是Claude...
 - ✅ 重要任务失败时使用 Claude Opus 兜底
 - ✅ 成本节省 80%+
 
-#### 实战案例2：性能优先型容灾
+#### 实战案例2：性能优先型内容灾
 
 **场景**：优先使用最强模型，失败后降级
 
@@ -644,9 +644,9 @@ OpenClaw（Claude Sonnet）：你好！我是Claude...
 - ✅ 高峰期自动降级
 - ✅ 确保服务不中断
 
-#### 实战案例3：多提供商容灾
+#### 实战案例3：多提供商内容灾
 
-**场景**：跨提供商容灾，避免单点故障
+**场景**：跨提供商内容灾，避免单点故障
 
 ```json
 {
@@ -686,7 +686,7 @@ cat ~/.openclaw/openclaw.json | jq '.agents.defaults.model.fallbacks = [
 # 重启 Gateway 使配置生效
 openclaw gateway restart
 ```text
-#### 验证容灾配置
+#### 验证内容灾配置
 
 ```bash
 # 查看当前配置
@@ -701,7 +701,7 @@ openclaw config get agents.defaults.model
   ]
 }
 ```text
-#### 容灾最佳实践
+#### 内容灾最佳实践
 
 **1. 选择不同提供商**：
 ✅ 推荐：Anthropic → OpenAI → Google
@@ -833,7 +833,7 @@ openclaw config get agents.defaults.model
 ```text
 **工作流程**：
 ```text
-1. 使用 account1 发送请求
+1. 使用 account1 发布送请求
 2. account1 达到限流 → 自动切换到 account2
 3. account2 达到限流 → 等待 account1 恢复
 4. 循环往复
@@ -981,8 +981,8 @@ openclaw test api
 ### 11.3.1 什么是 Memory Search？
 
 Memory Search 是 OpenClaw 的记忆系统，可以：
-- 记住历史对话内容
-- 搜索相关会话记录
+- 记住历史对话内内容
+- 搜索相关会话记附录
 - 提供上下文感知
 - 支持混合检索（向量 + 文本）
 
@@ -1028,14 +1028,14 @@ Memory Search 是 OpenClaw 的记忆系统，可以：
 ```text
 **可选值**：
 - `memory`：长期记忆（跨会话）
-- `sessions`：会话记录（当前会话）
+- `sessions`：会话记附录（当前会话）
 
 **推荐配置**：
 ```json
 // 只使用长期记忆
 "sources": ["memory"]
 
-// 同时使用长期记忆和会话记录
+// 同时使用长期记忆和会话记附录
 "sources": ["memory", "sessions"]
 ```text
 #### experimental（实验性功能）
@@ -1281,7 +1281,7 @@ OpenClaw：根据我的记忆，你的生日是 1990 年 1 月 1 日。
 **场景2：项目管理**
 ```text
 你：项目 A 的截止日期是 2026 年 3 月 1 日
-OpenClaw：已记录。
+OpenClaw：已记附录。
 
 （一周后）
 你：项目 A 什么时候截止？
@@ -1328,7 +1328,7 @@ openclaw memory import memory-backup.json
 ```text
 ### 11.3.11 故障排查
 
-**问题1：记忆搜索不工作**
+**访问题1：记忆搜索不工作**
 
 **原因**：API Key 无效或未配置
 
@@ -1342,7 +1342,7 @@ curl -H "Content-Type: application/json" \
   -d '{"contents":[{"parts":[{"text":"test"}]}]}' \
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent?key=你的API_Key"
 ```text
-**问题2：搜索结果不准确**
+**访问题2：搜索结果不准确**
 
 **原因**：混合检索权重不合适
 
@@ -1358,7 +1358,7 @@ curl -H "Content-Type: application/json" \
   }
 }
 ```text
-**问题3：记忆占用空间过大**
+**访问题3：记忆占用空间过大**
 
 **原因**：长期积累未清理
 
@@ -1423,12 +1423,12 @@ openclaw config set cache.maxSize 1000
 **缓存效果**：
 ```
 未启用缓存：
-- 相同问题每次都调用API
+- 相同访问题每次都调用API
 - Token消耗：10K/次
 - 成本：$0.05/次
 
 启用缓存后：
-- 相同问题直接返回缓存
+- 相同访问题直接返回缓存
 - Token消耗：0
 - 成本：$0
 - 节省：100%
@@ -1495,7 +1495,7 @@ openclaw config set cache.maxSize 1000
 1. 启用缓存
 2. 减少上下文
 3. 使用流式输出
-4. 并发处理
+4. 并发布处理
 ```text
 **优化后**：
 ```
@@ -1503,11 +1503,11 @@ openclaw config set cache.maxSize 1000
 用户体验：优秀
 提升：60%
 ```text
-### 11.5.2 并发处理优化
+### 11.5.2 并发布处理优化
 
-**配置并发数**：
+**配置并发布数**：
 ```bash
-# 设置最大并发数
+# 设置最大并发布数
 openclaw config set concurrency.max 5
 
 # 设置队列大小
@@ -1530,12 +1530,12 @@ openclaw stats memory
 ```
 ⚠️ 内存占用高：
 - 清理缓存
-- 减少并发
+- 减少并发布
 - 重启服务
 ```text
 ---
 
-## 📝 本章小结
+## 📝 本章节小结
 
 学习了OpenClaw的高级配置：
 1. Antigravity Manager配置
@@ -1967,9 +1967,9 @@ openclaw onboard
 
 | 工具 | 功能 | 示例 |
 |------|------|------|
-| `read_file` | 读取文件内容 | 读取配置文件 |
+| `read_file` | 读取文件内内容 | 读取配置文件 |
 | `write_file` | 写入文件 | 保存笔记 |
-| `list_directory` | 列出目录 | 查看文件列表 |
+| `list_directory` | 列出目附录 | 查看文件列表 |
 | `search_files` | 搜索文件 | 找到所有 PDF |
 | `move_file` | 移动文件 | 整理文件 |
 | `delete_file` | 删除文件 | 清理临时文件 |
@@ -1986,7 +1986,7 @@ openclaw onboard
 | 工具 | 功能 | 示例 |
 |------|------|------|
 | `web_search` | 网页搜索 | 搜索最新信息 |
-| `fetch_url` | 获取网页 | 下载内容 |
+| `fetch_url` | 获取网页 | 下载内内容 |
 | `api_call` | API 调用 | 调用第三方服务 |
 
 #### 数据处理工具
@@ -2060,7 +2060,7 @@ openclaw tools disable execute_command
   }
 }
 ```text
-### 11.7.4 自定义工具开发
+### 11.7.4 自定义工具开发布
 
 **创建自定义工具**：
 
@@ -2096,14 +2096,14 @@ openclaw tools register ~/.openclaw/tools/my-tool.js
 
 **文件搜索**：
 ```
-你：帮我找到所有包含"发票"的 PDF 文件
+你：帮我找到所有包含"发布票"的 PDF 文件
 
 OpenClaw 使用工具：
-1. search_files(pattern="*.pdf", content="发票")
+1. search_files(pattern="*.pdf", content="发布票")
 2. 返回结果：找到 3 个文件
-   - 发票_2024_01.pdf
-   - 报销发票.pdf
-   - 采购发票_Q1.pdf
+   - 发布票_2024_01.pdf
+   - 报销发布票.pdf
+   - 采购发布票_Q1.pdf
 ```text
 **网页搜索**：
 ```
@@ -2133,7 +2133,7 @@ OpenClaw 可以自动组合多个工具完成复杂任务：
 任务：下载网页并保存为 Markdown
 
 工具链：
-1. fetch_url(url) → 获取网页内容
+1. fetch_url(url) → 获取网页内内容
 2. extract_text(html) → 提取文本
 3. convert_to_markdown(text) → 转换格式
 4. write_file(path, content) → 保存文件
@@ -2437,10 +2437,10 @@ openclaw rollback
 # 卸载
 openclaw uninstall
 ```text
-### 11.8.13 开发和调试
+### 11.8.13 开发布和调试
 
 ```bash
-# 开发模式启动
+# 开发布模式启动
 openclaw dev
 
 # 调试模式
@@ -2486,7 +2486,7 @@ openclaw diagnose && openclaw health check && openclaw test api
 # 设置日志级别
 export OPENCLAW_LOG_LEVEL=debug
 
-# 设置配置目录
+# 设置配置目附录
 export OPENCLAW_HOME=~/.openclaw
 
 # 设置 Gateway 端口
@@ -2502,31 +2502,31 @@ export MOONSHOT_API_KEY=sk-xxx
 # 主配置文件
 ~/.openclaw/openclaw.json
 
-# 日志文件
+# 日志文件件
 ~/.openclaw/logs/gateway.log
 
-# 缓存目录
+# 缓存目附录
 ~/.openclaw/cache/
 
-# 数据目录
+# 数据目附录
 ~/.openclaw/data/
 
-# 插件目录
+# 插件目附录
 ~/.openclaw/plugins/
 
-# 工具目录
+# 工具目附录
 ~/.openclaw/tools/
 ```
 
 ---
 
-## 📝 本章小结
+## 📝 本章节小结
 
 学习了OpenClaw的高级配置：
 
-### 核心内容
+### 核心内内容
 1. **Antigravity Manager配置** - API 统一管理
-2. **多模型切换策略** - 场景化选择 + 模型容灾机制
+2. **多模型切换策略** - 场景化选择 + 模型内容灾机制
 3. **记忆搜索配置** - 智能上下文感知
 4. **成本优化方案** - 降低 50%+ 成本
 5. **性能调优技巧** - 提升 60% 响应速度
@@ -2536,7 +2536,7 @@ export MOONSHOT_API_KEY=sk-xxx
 
 ### 实战技能
 - ✅ 配置多个 AI 模型提供商
-- ✅ 配置模型容灾机制（primary + fallbacks）
+- ✅ 配置模型内容灾机制（primary + fallbacks）
 - ✅ 配置多认证 Profile 实现账号轮换
 - ✅ 配置记忆搜索系统
 - ✅ 根据任务选择最优模型
@@ -2549,24 +2549,24 @@ export MOONSHOT_API_KEY=sk-xxx
 - **长文档**：Kimi（200万字上下文）
 - **复杂任务**：Claude 3.5 Sonnet（推理能力强）
 - **本地隐私**：Ollama（完全本地）
-- **容灾方案**：DeepSeek → Claude Sonnet → Claude Opus
+- **内容灾方案**：DeepSeek → Claude Sonnet → Claude Opus
 - **记忆搜索**：Gemini Embedding（免费且效果好）
 
 ---
 
-**下一章预告**：第12章将进入实战案例部分，学习个人效率提升的完整工作流。
+**下一章节预告**：第12章节将进入实战案例部分，学习个人效率提升的完整工作流。
 
 
 ---
 
 ## 11.9 Talk 模式配置（2026.3.8+）
 
-Talk 模式允许语音输入和输出。新增 `talk.silenceTimeoutMs` 配置项，用于设置自动发送前的静默等待时间（毫秒）。
+Talk 模式允许语音输入和输出。新增 `talk.silenceTimeoutMs` 配置项，用于设置自动发布送前的静默等待时间（毫秒）。
 
 ```json
 {
   "talk": {
-    "silenceTimeoutMs": 2000  // 默认2秒无声后自动发送
+    "silenceTimeoutMs": 2000  // 默认2秒无声后自动发布送
   }
 }
 ```
@@ -2596,21 +2596,21 @@ tools:
  mode: "llm-context"
 ```
 
->说明：该模式为 **opt-in**，不配置则保持原行为。
+>说明：该模式为 **opt-in**，不配置则保支持原行为。
 
 
 ---
 
 ## 🌐 在线阅读
 
-📖 **想在线阅读此章节？**
+📖 **想在线阅读此章节节？**
 
-[🔗 在线阅读此章节](https://awesome.tryopenclaw.asia/docs/03-advanced/11-advanced-configuration/)
+[🔗 在线阅读此章节节](https://awesome.tryopenclaw.asia/docs/03-advanced/11-advanced-configuration/)
 
 访问网站获取更好的阅读体验：
 - 📱 响应式设计，支持手机、平板、电脑
-- ���� 支持黑暗模式，保护眼睛
-- 🔍 内置搜索功能，快速定位内容
-- 📋 目录导航，轻松跳转章节
+-  支持黑暗模式，保护眼睛
+- 🔍 内置搜索功能，快速定位内内容
+- 📋 目附录导航，轻松跳转章节节
 
-[🏠 访问完整教���网站](https://awesome.tryopenclaw.asia)
+[🏠 访问完整教网站](https://awesome.tryopenclaw.asia)
