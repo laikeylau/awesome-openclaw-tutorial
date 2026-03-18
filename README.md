@@ -6,6 +6,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![GitHub forks](https://img.shields.io/github/forks/xianyu110/awesome-openclaw-tutorial?style=social)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-v2026.3.12-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
+[![Status](https://img.shields.io/badge/status-完成-success.svg)](PROJECT-SUMMARY.md)
+[![CSDN](https://img.shields.io/badge/CSDN-博客-c32136?style=for-the-badge&logo=csdn)](https://blog.csdn.net/xianyu120)
+[![Bilibili](https://img.shields.io/badge/Bilibili-B站-fb7299?style=for-the-badge&logo=bilibili)](https://space.bilibili.com/399102586)
+[![微信公众号](https://img.shields.io/badge/微信公众号-MaynorAI-07C160?style=for-the-badge&logo=wechat)](https://upload.may.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg)
+[![YouTube](https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@buguniao537)
+[![X](https://img.shields.io/badge/X-Profile-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Nikitka_aktikiN)
 
 ---
 
